@@ -17,67 +17,100 @@ export default function Home() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Hero Section */}
-      <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold text-foreground mb-4">
-          PS70: Introduction to Digital Fabrication
-        </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-          Documentation of my journey through digital fabrication, from 2D design to embedded programming and final project development.
-        </p>
+      <div className="text-center mb-20">
+        <div className="glass-card rounded-3xl p-12 mb-8">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            Digital Fabrication
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-purple-200">
+              Journey
+            </span>
+          </h1>
+          <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+            Exploring the intersection of design, engineering, and creativity through PS70: Introduction to Digital Fabrication
+          </p>
+        </div>
       </div>
 
       {/* Assignments Grid */}
-      <div className="mb-16">
-        <h2 className="text-2xl font-semibold text-foreground mb-8">Weekly Assignments</h2>
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mb-20">
+        <div className="glass-card rounded-2xl p-8 mb-8">
+          <h2 className="text-3xl font-bold text-white mb-2 text-center">Weekly Assignments</h2>
+          <p className="text-white/70 text-center">Track my progress through the semester</p>
+        </div>
+        
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {assignments.map((assignment) => (
             <Link
               key={assignment.week}
               href={assignment.href}
-              className={`block p-6 rounded-lg border transition-all hover:shadow-md ${
-                assignment.completed
-                  ? 'border-green-200 bg-green-50 dark:border-green-800 dark:bg-green-950'
-                  : 'border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900 hover:border-gray-300 dark:hover:border-gray-700'
-              }`}
+              className="glass-card rounded-2xl p-6 group hover:scale-105 transition-all duration-300"
             >
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-sm font-semibold text-white/60 bg-white/10 px-3 py-1 rounded-full">
                   Week {assignment.week}
                 </span>
                 {assignment.completed && (
-                  <span className="text-green-600 dark:text-green-400">
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center">
+                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                  </span>
+                  </div>
                 )}
               </div>
-              <h3 className="font-medium text-foreground">{assignment.title}</h3>
+              <h3 className="font-semibold text-white text-lg mb-2 group-hover:text-blue-200 transition-colors">
+                {assignment.title}
+              </h3>
+              <div className="h-1 bg-white/10 rounded-full overflow-hidden">
+                <div 
+                  className={`h-full bg-gradient-to-r from-blue-400 to-purple-400 transition-all duration-500 ${
+                    assignment.completed ? 'w-full' : 'w-0'
+                  }`}
+                ></div>
+              </div>
             </Link>
           ))}
         </div>
       </div>
 
-      {/* Quick Links */}
-      <div className="grid gap-6 md:grid-cols-2">
+      {/* Featured Cards */}
+      <div className="grid gap-8 md:grid-cols-2">
         <Link
           href="/about"
-          className="p-6 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 hover:border-gray-300 dark:hover:border-gray-700 transition-all hover:shadow-md"
+          className="glass-card rounded-2xl p-8 group hover:scale-105 transition-all duration-300"
         >
-          <h3 className="text-lg font-medium text-foreground mb-2">About Me</h3>
-          <p className="text-gray-600 dark:text-gray-400">
-            Learn more about my background and interests in digital fabrication.
+          <div className="flex items-center mb-4">
+            <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center mr-4">
+              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-bold text-white group-hover:text-blue-200 transition-colors">
+              About Me
+            </h3>
+          </div>
+          <p className="text-white/70 text-lg leading-relaxed">
+            Discover my background, interests, and goals for this digital fabrication journey.
           </p>
         </Link>
+        
         <Link
           href="/week1"
-          className="p-6 rounded-lg border border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-950 hover:border-blue-300 dark:hover:border-blue-700 transition-all hover:shadow-md"
+          className="glass-card rounded-2xl p-8 group hover:scale-105 transition-all duration-300 bg-gradient-to-br from-purple-500/20 to-pink-500/20"
         >
-          <h3 className="text-lg font-medium text-foreground mb-2">Final Project Proposal</h3>
-          <p className="text-gray-600 dark:text-gray-400">
-            Check out my ideas for the semester final project.
+          <div className="flex items-center mb-4">
+            <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-600 rounded-xl flex items-center justify-center mr-4">
+              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h3 className="text-2xl font-bold text-white group-hover:text-purple-200 transition-colors">
+              Final Project
+            </h3>
+          </div>
+          <p className="text-white/70 text-lg leading-relaxed">
+            Explore my ambitious smart plant monitoring system proposal and development plan.
           </p>
         </Link>
       </div>

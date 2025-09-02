@@ -1,75 +1,138 @@
 export default function About() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="max-w-3xl mx-auto">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-foreground mb-4">About Me</h1>
-          <div className="w-24 h-1 bg-blue-500 mx-auto"></div>
+        <div className="text-center mb-16">
+          <div className="glass-card rounded-3xl p-12 mb-8">
+            <h1 className="text-5xl font-bold text-white mb-6">About Me</h1>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full"></div>
+            <p className="text-xl text-white/80 mt-6 max-w-2xl mx-auto">
+              Passionate about the intersection of design, technology, and making
+            </p>
+          </div>
         </div>
 
         {/* Main Content */}
-        <div className="prose prose-gray dark:prose-invert max-w-none">
-          <div className="bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 p-8 mb-8">
-            <h2 className="text-2xl font-semibold text-foreground mb-4">Hello! 👋</h2>
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-              I&apos;m a student in PS70: Introduction to Digital Fabrication, excited to explore the intersection of 
-              design, engineering, and creativity. This course represents my journey into the world of making, 
-              where digital tools meet physical creation.
-            </p>
+        <div className="space-y-8">
+          <div className="glass-card rounded-2xl p-10">
+            <div className="flex items-center mb-6">
+              <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center mr-6">
+                <span className="text-3xl">👋</span>
+              </div>
+              <h2 className="text-3xl font-bold text-white">Hello!</h2>
+            </div>
             
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-              My interests span across technology, design, and hands-on problem solving. I&apos;m particularly drawn 
-              to projects that combine multiple disciplines and have real-world applications. Through this course, 
-              I hope to develop skills in 3D design, electronics, programming, and various fabrication techniques.
-            </p>
+            <div className="space-y-6 text-lg text-white/80 leading-relaxed">
+              <p>
+                I&apos;m a student in PS70: Introduction to Digital Fabrication, excited to explore the intersection of 
+                design, engineering, and creativity. This course represents my journey into the world of making, 
+                where digital tools meet physical creation.
+              </p>
+              
+              <p>
+                My interests span across technology, design, and hands-on problem solving. I&apos;m particularly drawn 
+                to projects that combine multiple disciplines and have real-world applications. Through this course, 
+                I hope to develop skills in 3D design, electronics, programming, and various fabrication techniques.
+              </p>
 
-            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              When I&apos;m not working on assignments, you can find me exploring new technologies, sketching ideas, 
-              or tinkering with various projects. I believe that the best learning happens through experimentation 
-              and iteration, and I&apos;m excited to document that process throughout this semester.
-            </p>
+              <p>
+                When I&apos;m not working on assignments, you can find me exploring new technologies, sketching ideas, 
+                or tinkering with various projects. I believe that the best learning happens through experimentation 
+                and iteration, and I&apos;m excited to document that process throughout this semester.
+              </p>
+            </div>
           </div>
 
           {/* Skills & Interests */}
-          <div className="grid gap-6 md:grid-cols-2 mb-8">
-            <div className="bg-blue-50 dark:bg-blue-950 rounded-lg border border-blue-200 dark:border-blue-800 p-6">
-              <h3 className="text-lg font-semibold text-foreground mb-3">Interests</h3>
-              <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                <li>• Digital Fabrication</li>
-                <li>• Electronics & IoT</li>
-                <li>• 3D Design & Printing</li>
-                <li>• Sustainable Design</li>
-                <li>• Interactive Systems</li>
+          <div className="grid gap-8 md:grid-cols-2">
+            <div className="glass-card rounded-2xl p-8 bg-gradient-to-br from-blue-500/20 to-cyan-500/20">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-xl flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-white">Interests</h3>
+              </div>
+              <ul className="space-y-3 text-white/80">
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                  Digital Fabrication
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>
+                  Electronics & IoT
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                  3D Design & Printing
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>
+                  Sustainable Design
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                  Interactive Systems
+                </li>
               </ul>
             </div>
 
-            <div className="bg-green-50 dark:bg-green-950 rounded-lg border border-green-200 dark:border-green-800 p-6">
-              <h3 className="text-lg font-semibold text-foreground mb-3">Goals for PS70</h3>
-              <ul className="space-y-2 text-gray-700 dark:text-gray-300">
-                <li>• Master digital design tools</li>
-                <li>• Build working prototypes</li>
-                <li>• Learn electronics basics</li>
-                <li>• Develop making skills</li>
-                <li>• Create an impactful final project</li>
+            <div className="glass-card rounded-2xl p-8 bg-gradient-to-br from-green-500/20 to-emerald-500/20">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-500 rounded-xl flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-white">Goals for PS70</h3>
+              </div>
+              <ul className="space-y-3 text-white/80">
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                  Master digital design tools
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
+                  Build working prototypes
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                  Learn electronics basics
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
+                  Develop making skills
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                  Create an impactful final project
+                </li>
               </ul>
             </div>
           </div>
 
           {/* Call to Action */}
-          <div className="text-center bg-gray-50 dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 p-8">
-            <h3 className="text-xl font-semibold text-foreground mb-3">Let&apos;s Connect!</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-4">
+          <div className="glass-card rounded-2xl p-10 text-center bg-gradient-to-br from-purple-500/20 to-pink-500/20">
+            <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 className="text-3xl font-bold text-white mb-4">Let&apos;s Connect!</h3>
+            <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
               I&apos;d love to collaborate, share ideas, or discuss digital fabrication projects.
             </p>
-            <div className="flex justify-center space-x-4">
-              <a 
-                href="mailto:your.email@example.com" 
-                className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md text-sm font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-              >
-                Email Me
-              </a>
-            </div>
+            <a 
+              href="mailto:your.email@example.com" 
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-2xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              Email Me
+            </a>
           </div>
         </div>
       </div>
