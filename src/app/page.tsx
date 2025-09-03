@@ -2,42 +2,43 @@ import Link from 'next/link';
 
 export default function Home() {
   const assignments = [
-    { week: 1, title: 'Website & Final Project Proposal', href: '/week1', completed: true },
+    { week: 1, title: 'Introduction and Documentation', href: '/week1', completed: true },
     { week: 2, title: '2D Design & Cutting', href: '/week2', completed: false },
-    { week: 3, title: '3D Design & Printing', href: '/week3', completed: false },
+    { week: 3, title: 'Hand Tools and Fabrication', href: '/week3', completed: false },
     { week: 4, title: 'Microcontroller Programming', href: '/week4', completed: false },
-    { week: 5, title: 'Electronic Input Devices', href: '/week5', completed: false },
-    { week: 6, title: 'Electronic Output Devices', href: '/week6', completed: false },
-    { week: 7, title: 'Molding & Casting', href: '/week7', completed: false },
-    { week: 8, title: 'Computer-Controlled Machining', href: '/week8', completed: false },
-    { week: 9, title: 'Embedded Programming', href: '/week9', completed: false },
-    { week: 10, title: 'Machine Building', href: '/week10', completed: false },
-    { week: 11, title: 'Computer Programming', href: '/week11', completed: false },
-    { week: 12, title: 'Final Project', href: '/final-project', completed: false },
+    { week: 5, title: '3D Design & Printing', href: '/week5', completed: false },
+    { week: 6, title: 'Electronic Input Devices', href: '/week6', completed: false },
+    { week: 7, title: 'Electronic Output Devices', href: '/week7', completed: false },
+    { week: 8, title: 'CNC Milling', href: '/week8', completed: false },
+    { week: 9, title: 'Radio, WiFi, and Bluetooth', href: '/week9', completed: false },
+    { week: 10, title: 'Machine Building and End Effectors', href: '/week10', completed: false },
+    { week: 11, title: 'Project Integration', href: '/week11', completed: false },
+    { week: 12, title: 'Machine Demo / Wildcard', href: '/week12', completed: false },
+    { week: 13, title: 'Next Steps', href: '/week13', completed: false },
+    { week: 14, title: 'Project Preperation', href: '/week14', completed: false },
+    { week: 15, title: 'Final Project', href: '/week15', completed: false },
   ];
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Hero Section */}
       <div className="text-center mb-20">
-        <div className="glass-card rounded-3xl p-12 mb-8">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Digital Fabrication
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-purple-200">
-              Journey
-            </span>
-          </h1>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Exploring the intersection of design, engineering, and creativity through PS70: Introduction to Digital Fabrication
-          </p>
-        </div>
+        <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          Digital Fabrication
+          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-purple-200">
+            Journey
+          </span>
+        </h1>
+        <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed mb-8">
+          Exploring the intersection of design, engineering, and creativity through PS70: Introduction to Digital Fabrication
+        </p>
       </div>
 
       {/* Assignments Grid */}
       <div className="mb-20">
-        <div className="glass-card rounded-2xl p-8 mb-8">
-          <h2 className="text-3xl font-bold text-white mb-2 text-center">Weekly Assignments</h2>
-          <p className="text-white/70 text-center">Track my progress through the semester</p>
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold text-white mb-2">Weekly Assignments</h2>
+          <p className="text-white/70">Track my progress through the semester</p>
         </div>
         
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -45,7 +46,7 @@ export default function Home() {
             <Link
               key={assignment.week}
               href={assignment.href}
-              className="glass-card rounded-2xl p-6 group hover:scale-105 transition-all duration-300"
+              className="glass-card-clickable rounded-2xl p-6 group"
             >
               <div className="flex items-center justify-between mb-4">
                 <span className="text-sm font-semibold text-white/60 bg-white/10 px-3 py-1 rounded-full">
@@ -78,7 +79,7 @@ export default function Home() {
       <div className="grid gap-8 md:grid-cols-2">
         <Link
           href="/about"
-          className="glass-card rounded-2xl p-8 group hover:scale-105 transition-all duration-300"
+          className="glass-card-clickable rounded-2xl p-8 group"
         >
           <div className="flex items-center mb-4">
             <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center mr-4">
@@ -97,7 +98,7 @@ export default function Home() {
         
         <Link
           href="/week1"
-          className="glass-card rounded-2xl p-8 group hover:scale-105 transition-all duration-300 bg-gradient-to-br from-purple-500/20 to-pink-500/20"
+          className="glass-card-clickable rounded-2xl p-8 group bg-gradient-to-br from-purple-500/20 to-pink-500/20"
         >
           <div className="flex items-center mb-4">
             <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-600 rounded-xl flex items-center justify-center mr-4">

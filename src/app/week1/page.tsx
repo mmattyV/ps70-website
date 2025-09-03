@@ -3,28 +3,26 @@ export default function Week1() {
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="mb-16">
-          <div className="glass-card rounded-3xl p-12 text-center">
-            <div className="flex items-center justify-center gap-4 mb-6">
-              <span className="text-sm font-semibold text-white bg-white/20 px-4 py-2 rounded-full backdrop-blur-sm">
-                Week 1
-              </span>
-              <span className="text-sm text-white/60">
-                January 2024
-              </span>
-            </div>
-            <h1 className="text-5xl font-bold text-white mb-6">
-              Website & Final Project Proposal
-            </h1>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              Setting up my documentation website and proposing ideas for the semester final project.
-            </p>
+        <div className="mb-16 text-center">
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <span className="text-sm font-semibold text-white bg-white/20 px-4 py-2 rounded-full backdrop-blur-sm">
+              Week 1
+            </span>
+            <span className="text-sm text-white/60">
+              January 2024
+            </span>
           </div>
+          <h1 className="text-5xl font-bold text-white mb-6">
+            Website & Final Project Proposal
+          </h1>
+          <p className="text-xl text-white/80 max-w-3xl mx-auto mb-8">
+            Setting up my documentation website and proposing ideas for the semester final project.
+          </p>
         </div>
 
         {/* Website Documentation */}
         <div className="mb-16">
-          <div className="glass-card rounded-2xl p-8 mb-8">
+          <div className="mb-8">
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-purple-500 rounded-xl flex items-center justify-center mr-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -35,7 +33,7 @@ export default function Week1() {
             </div>
           </div>
           
-          <div className="glass-card rounded-2xl p-8 mb-8">
+          <div className="text-section rounded-2xl p-8 mb-8">
             <h3 className="text-2xl font-semibold text-white mb-6">Technology Stack</h3>
             <div className="grid gap-8 md:grid-cols-2">
               <div className="space-y-4">
@@ -65,7 +63,7 @@ export default function Week1() {
             </div>
           </div>
 
-          <div className="glass-card rounded-2xl p-8 bg-gradient-to-br from-green-500/20 to-emerald-500/20">
+          <div className="text-section rounded-2xl p-8 bg-gradient-to-br from-green-500/20 to-emerald-500/20">
             <div className="flex items-center mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-green-400 to-emerald-500 rounded-lg flex items-center justify-center mr-3">
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,7 +82,7 @@ export default function Week1() {
 
         {/* Final Project Proposal */}
         <div className="mb-16">
-          <div className="glass-card rounded-2xl p-8 mb-8">
+          <div className="mb-8">
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-blue-500 rounded-xl flex items-center justify-center mr-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -96,7 +94,7 @@ export default function Week1() {
           </div>
           
           {/* Project Overview */}
-          <div className="glass-card rounded-2xl p-10 mb-8 bg-gradient-to-br from-blue-500/20 to-green-500/20">
+          <div className="text-section rounded-2xl p-10 mb-8 bg-gradient-to-br from-blue-500/20 to-green-500/20">
             <div className="text-center mb-8">
               <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-blue-500 rounded-3xl flex items-center justify-center mx-auto mb-6">
                 <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -111,64 +109,31 @@ export default function Week1() {
             </div>
             
             <div className="grid gap-8 md:grid-cols-2">
-              <div className="glass-card rounded-xl p-6">
+              <div className="text-section rounded-xl p-6">
                 <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
                   <span className="w-3 h-3 bg-green-400 rounded-full mr-3"></span>
                   Key Features
                 </h4>
-                <ul className="space-y-3 text-white/80">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
-                    Soil moisture monitoring
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
-                    Light level detection
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
-                    Temperature & humidity tracking
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
-                    Automated watering system
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
-                    Mobile app interface
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
-                    Data logging & analytics
-                  </li>
+                <ul className="text-white/80 space-y-2 ml-5">
+                  <li>• Soil moisture monitoring</li>
+                  <li>• Light level detection</li>
+                  <li>• Temperature & humidity tracking</li>
+                  <li>• Automated watering system</li>
+                  <li>• Mobile app interface</li>
+                  <li>• Data logging & analytics</li>
                 </ul>
               </div>
-              <div className="glass-card rounded-xl p-6">
+              <div className="text-section rounded-xl p-6">
                 <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
                   <span className="w-3 h-3 bg-purple-400 rounded-full mr-3"></span>
                   Target Users
                 </h4>
-                <ul className="space-y-3 text-white/80">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
-                    Busy plant enthusiasts
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>
-                    Frequent travelers
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
-                    Beginner gardeners
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>
-                    Office environments
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
-                    Educational settings
-                  </li>
+                <ul className="text-white/80 space-y-2 ml-5">
+                  <li>• Busy plant enthusiasts</li>
+                  <li>• Frequent travelers</li>
+                  <li>• Beginner gardeners</li>
+                  <li>• Office environments</li>
+                  <li>• Educational settings</li>
                 </ul>
               </div>
             </div>
@@ -176,7 +141,7 @@ export default function Week1() {
 
           {/* Technical Implementation */}
           <div className="grid gap-6 lg:grid-cols-3 mb-8">
-            <div className="glass-card rounded-2xl p-6 bg-gradient-to-br from-orange-500/20 to-red-500/20">
+            <div className="text-section rounded-2xl p-6 bg-gradient-to-br from-orange-500/20 to-red-500/20">
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center mr-3">
                   <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -204,7 +169,7 @@ export default function Week1() {
                 </li>
               </ul>
             </div>
-            <div className="glass-card rounded-2xl p-6 bg-gradient-to-br from-blue-500/20 to-cyan-500/20">
+            <div className="text-section rounded-2xl p-6 bg-gradient-to-br from-blue-500/20 to-cyan-500/20">
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-xl flex items-center justify-center mr-3">
                   <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -240,7 +205,7 @@ export default function Week1() {
                 </li>
               </ul>
             </div>
-            <div className="glass-card rounded-2xl p-6 bg-gradient-to-br from-purple-500/20 to-pink-500/20">
+            <div className="text-section rounded-2xl p-6 bg-gradient-to-br from-purple-500/20 to-pink-500/20">
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 bg-gradient-to-br from-purple-400 to-pink-500 rounded-xl flex items-center justify-center mr-3">
                   <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -279,7 +244,7 @@ export default function Week1() {
           </div>
 
           {/* Timeline & Milestones */}
-          <div className="glass-card rounded-2xl p-8 mb-8">
+          <div className="text-section rounded-2xl p-8 mb-8">
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-purple-500 rounded-xl flex items-center justify-center mr-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -289,7 +254,7 @@ export default function Week1() {
               <h4 className="text-2xl font-bold text-white">Development Timeline</h4>
             </div>
             <div className="space-y-6">
-              <div className="flex items-center gap-6 p-4 glass rounded-xl">
+              <div className="flex items-center gap-6 p-4 text-section rounded-xl">
                 <div className="flex-shrink-0">
                   <span className="text-sm font-semibold text-white bg-gradient-to-r from-blue-500 to-purple-500 px-4 py-2 rounded-full">Weeks 2-4</span>
                 </div>
@@ -300,7 +265,7 @@ export default function Week1() {
                   <span className="text-white text-sm font-bold">1</span>
                 </div>
               </div>
-              <div className="flex items-center gap-6 p-4 glass rounded-xl">
+              <div className="flex items-center gap-6 p-4 text-section rounded-xl">
                 <div className="flex-shrink-0">
                   <span className="text-sm font-semibold text-white bg-gradient-to-r from-green-500 to-blue-500 px-4 py-2 rounded-full">Weeks 5-7</span>
                 </div>
@@ -311,7 +276,7 @@ export default function Week1() {
                   <span className="text-white text-sm font-bold">2</span>
                 </div>
               </div>
-              <div className="flex items-center gap-6 p-4 glass rounded-xl">
+              <div className="flex items-center gap-6 p-4 text-section rounded-xl">
                 <div className="flex-shrink-0">
                   <span className="text-sm font-semibold text-white bg-gradient-to-r from-orange-500 to-red-500 px-4 py-2 rounded-full">Weeks 8-10</span>
                 </div>
@@ -322,7 +287,7 @@ export default function Week1() {
                   <span className="text-white text-sm font-bold">3</span>
                 </div>
               </div>
-              <div className="flex items-center gap-6 p-4 glass rounded-xl">
+              <div className="flex items-center gap-6 p-4 text-section rounded-xl">
                 <div className="flex-shrink-0">
                   <span className="text-sm font-semibold text-white bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 rounded-full">Weeks 11-12</span>
                 </div>
@@ -337,7 +302,7 @@ export default function Week1() {
           </div>
 
           {/* Success Metrics */}
-          <div className="glass-card rounded-2xl p-8 bg-gradient-to-br from-green-500/20 to-emerald-500/20">
+          <div className="text-section rounded-2xl p-8 bg-gradient-to-br from-green-500/20 to-emerald-500/20">
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-500 rounded-xl flex items-center justify-center mr-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -383,7 +348,7 @@ export default function Week1() {
         </div>
 
         {/* Reflection */}
-        <div className="glass-card rounded-2xl p-10 bg-gradient-to-br from-yellow-500/20 to-orange-500/20">
+        <div className="text-section rounded-2xl p-10 bg-gradient-to-br from-yellow-500/20 to-orange-500/20">
           <div className="flex items-center mb-6">
             <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center mr-6">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
