@@ -13,7 +13,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="glass fixed top-4 left-4 right-4 z-50 rounded-2xl">
+    <nav className="glass fixed top-0 left-0 right-0 w-full z-50">
       <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="text-xl font-bold text-white hover:text-blue-200 transition-colors">

@@ -37,7 +37,7 @@ export default function RootLayout({
         </div>
         
         <Navigation />
-        <main className="min-h-screen pt-24 relative z-10">
+        <main className="min-h-screen pt-20 relative z-10">
           {children}
         </main>
       </body>
