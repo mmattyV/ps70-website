@@ -66,30 +66,20 @@ body {
 }
 
 .glass-card {
-  /* GitHub Pages compatible glass effect - no backdrop-filter dependency */
+  /* Background that matches the page gradient */
   background: 
-    linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.08) 100%),
-    linear-gradient(225deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.12) 50%, rgba(255, 255, 255, 0.05) 100%),
-    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.05) 40%, transparent 70%),
-    radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.03) 40%, transparent 70%),
-    linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
   
-  background-blend-mode: overlay, multiply, screen, color-dodge, normal;
-  background-size: 100% 100%, 100% 100%, 300% 300%, 300% 300%, 100% 100%;
-  background-position: 0% 0%, 0% 0%, -50% -50%, 150% 150%, 0% 0%;
+  /* Subtle backdrop filter for supported browsers */
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
   
-  /* Still include backdrop-filter for browsers that support it */
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  -moz-backdrop-filter: blur(20px);
-  -ms-backdrop-filter: blur(20px);
-  -o-backdrop-filter: blur(20px);
-  
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 
-    0 8px 32px 0 rgba(31, 38, 135, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+    0 8px 32px 0 rgba(0, 0, 0, 0.1),
+    0 4px 16px 0 rgba(102, 126, 234, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 /* Only clickable glass cards get hover effects */
@@ -180,16 +170,13 @@ body {
   
   .glass-card {
     background: 
-      linear-gradient(135deg, rgba(148, 163, 184, 0.3) 0%, rgba(148, 163, 184, 0.12) 50%, rgba(148, 163, 184, 0.06) 100%),
-      linear-gradient(225deg, rgba(148, 163, 184, 0.2) 0%, rgba(148, 163, 184, 0.1) 50%, rgba(148, 163, 184, 0.04) 100%),
-      radial-gradient(circle at 30% 30%, rgba(148, 163, 184, 0.15) 0%, rgba(148, 163, 184, 0.04) 40%, transparent 70%),
-      radial-gradient(circle at 70% 70%, rgba(148, 163, 184, 0.12) 0%, rgba(148, 163, 184, 0.02) 40%, transparent 70%),
-      linear-gradient(45deg, rgba(148, 163, 184, 0.08) 0%, rgba(148, 163, 184, 0.04) 100%);
-    border: 1px solid rgba(148, 163, 184, 0.25);
+      linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%),
+      linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 
-      0 8px 32px 0 rgba(0, 0, 0, 0.4),
-      inset 0 1px 0 rgba(148, 163, 184, 0.2),
-      inset 0 -1px 0 rgba(148, 163, 184, 0.08);
+      0 8px 32px 0 rgba(0, 0, 0, 0.2),
+      0 4px 16px 0 rgba(102, 126, 234, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
   }
 }
 
