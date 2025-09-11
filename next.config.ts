@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
   assetPrefix: '/ps70-website/',
   distDir: 'out',
   skipTrailingSlashRedirect: true,
+  outputFileTracingRoot: __dirname,
 };
 
 export default nextConfig;
