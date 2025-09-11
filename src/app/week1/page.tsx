@@ -94,46 +94,67 @@ export default function Week1() {
           </div>
           
           {/* Project Overview */}
-          <div className="text-section rounded-2xl p-10 mb-8 bg-gradient-to-br from-blue-500/20 to-green-500/20">
+          <div className="text-section rounded-2xl p-10 mb-8 bg-gradient-to-br from-red-500/20 to-orange-500/20">
             <div className="text-center mb-8">
-              <div className="w-20 h-20 bg-gradient-to-br from-green-400 to-blue-500 rounded-3xl flex items-center justify-center mx-auto mb-6">
+              <div className="w-20 h-20 bg-gradient-to-br from-red-400 to-orange-500 rounded-3xl flex items-center justify-center mx-auto mb-6">
                 <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
                 </svg>
               </div>
-              <h3 className="text-4xl font-bold text-white mb-4">Smart Plant Monitoring System</h3>
+              <h3 className="text-4xl font-bold text-white mb-4">AI-Controlled Turret System</h3>
               <p className="text-xl text-white/80 leading-relaxed max-w-3xl mx-auto">
-                An intelligent plant care system that monitors environmental conditions and provides automated 
-                care for indoor plants, combining IoT sensors, data visualization, and automated watering mechanisms.
+                An intelligent automated turret that uses computer vision and AI to detect, track, and engage moving targets 
+                with BB pellets. Combining machine learning, servo control systems, and real-time image processing for precision targeting.
+              </p>
+            </div>
+
+            {/* YouTube Video Embed */}
+            <div className="mb-8">
+              <div className="relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+                <div className="relative pb-[56.25%] h-0">
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src="https://www.youtube.com/embed/1G1Z4vjy9rg"
+                    title="AI Turret System Example"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+              <p className="text-center text-white/60 mt-4 italic">
+                Inspiration: Advanced AI turret system demonstration
               </p>
             </div>
             
             <div className="grid gap-8 md:grid-cols-2">
               <div className="text-section rounded-xl p-6">
                 <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
-                  <span className="w-3 h-3 bg-green-400 rounded-full mr-3"></span>
+                  <span className="w-3 h-3 bg-red-400 rounded-full mr-3"></span>
                   Key Features
                 </h4>
                 <ul className="text-white/80 space-y-2 ml-5">
-                  <li>• Soil moisture monitoring</li>
-                  <li>• Light level detection</li>
-                  <li>• Temperature & humidity tracking</li>
-                  <li>• Automated watering system</li>
-                  <li>• Mobile app interface</li>
-                  <li>• Data logging & analytics</li>
+                  <li>• Real-time object detection & tracking</li>
+                  <li>• AI-powered target identification</li>
+                  <li>• Precision servo-controlled aiming</li>
+                  <li>• Automated BB pellet firing system</li>
+                  <li>• Safety protocols & emergency stop</li>
+                  <li>• Live video feed & control interface</li>
+                  <li>• Target hit accuracy analytics</li>
                 </ul>
               </div>
               <div className="text-section rounded-xl p-6">
                 <h4 className="text-xl font-semibold text-white mb-4 flex items-center">
-                  <span className="w-3 h-3 bg-purple-400 rounded-full mr-3"></span>
-                  Target Users
+                  <span className="w-3 h-3 bg-orange-400 rounded-full mr-3"></span>
+                  Applications
                 </h4>
                 <ul className="text-white/80 space-y-2 ml-5">
-                  <li>• Busy plant enthusiasts</li>
-                  <li>• Frequent travelers</li>
-                  <li>• Beginner gardeners</li>
-                  <li>• Office environments</li>
-                  <li>• Educational settings</li>
+                  <li>• Educational robotics demonstrations</li>
+                  <li>• Computer vision research</li>
+                  <li>• Target practice training systems</li>
+                  <li>• Automated gaming platforms</li>
+                  <li>• Security system prototypes</li>
+                  <li>• STEM outreach programs</li>
                 </ul>
               </div>
             </div>
@@ -153,19 +174,23 @@ export default function Week1() {
               <ul className="text-white/80 space-y-2">
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-orange-400 rounded-full mr-3"></span>
-                  Custom sensor housing
+                  Turret base & rotating platform
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-red-400 rounded-full mr-3"></span>
-                  Water reservoir design
+                  BB pellet magazine & feed system
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-orange-400 rounded-full mr-3"></span>
-                  Mounting brackets
+                  Camera mounting gimbal
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-red-400 rounded-full mr-3"></span>
-                  Protective enclosures
+                  Barrel & firing mechanism
+                </li>
+                <li className="flex items-center">
+                  <span className="w-1.5 h-1.5 bg-orange-400 rounded-full mr-3"></span>
+                  Safety shields & enclosures
                 </li>
               </ul>
             </div>
@@ -181,27 +206,27 @@ export default function Week1() {
               <ul className="text-white/80 space-y-2">
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3"></span>
-                  ESP32 microcontroller
+                  Raspberry Pi 4 (main controller)
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-3"></span>
-                  Soil moisture sensors
+                  High-resolution camera module
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3"></span>
-                  Light sensors (LDR)
+                  Pan/tilt servo motors (2x)
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-3"></span>
-                  DHT22 temp/humidity
+                  Firing mechanism servo
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3"></span>
-                  Water pump & relay
+                  Emergency stop button
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-3"></span>
-                  LCD display
+                  LED status indicators
                 </li>
               </ul>
             </div>
@@ -212,32 +237,32 @@ export default function Week1() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg>
                 </div>
-                <h4 className="text-lg font-semibold text-white">Programming</h4>
+                <h4 className="text-lg font-semibold text-white">AI & Programming</h4>
               </div>
               <ul className="text-white/80 space-y-2">
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></span>
-                  Sensor data collection
+                  OpenCV object detection
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-pink-400 rounded-full mr-3"></span>
-                  WiFi connectivity
+                  YOLO real-time tracking
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></span>
-                  Web dashboard
+                  PID control algorithms
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-pink-400 rounded-full mr-3"></span>
-                  Mobile app (React Native)
+                  Web control interface
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></span>
-                  Database integration
+                  Safety monitoring system
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-pink-400 rounded-full mr-3"></span>
-                  Alert notifications
+                  Target analytics & logging
                 </li>
               </ul>
             </div>
@@ -259,7 +284,7 @@ export default function Week1() {
                   <span className="text-sm font-semibold text-white bg-gradient-to-r from-blue-500 to-purple-500 px-4 py-2 rounded-full">Weeks 2-4</span>
                 </div>
                 <div className="flex-1">
-                  <span className="text-white/90 text-lg">Design and 3D print sensor housings and mounting system</span>
+                  <span className="text-white/90 text-lg">Design and 3D print turret base, gimbal system, and firing mechanism</span>
                 </div>
                 <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center">
                   <span className="text-white text-sm font-bold">1</span>
@@ -270,7 +295,7 @@ export default function Week1() {
                   <span className="text-sm font-semibold text-white bg-gradient-to-r from-green-500 to-blue-500 px-4 py-2 rounded-full">Weeks 5-7</span>
                 </div>
                 <div className="flex-1">
-                  <span className="text-white/90 text-lg">Build and test sensor circuits, implement basic data collection</span>
+                  <span className="text-white/90 text-lg">Assemble electronics, test servo controls, and implement basic camera tracking</span>
                 </div>
                 <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center">
                   <span className="text-white text-sm font-bold">2</span>
@@ -281,7 +306,7 @@ export default function Week1() {
                   <span className="text-sm font-semibold text-white bg-gradient-to-r from-orange-500 to-red-500 px-4 py-2 rounded-full">Weeks 8-10</span>
                 </div>
                 <div className="flex-1">
-                  <span className="text-white/90 text-lg">Develop web interface and mobile app, integrate automated watering</span>
+                  <span className="text-white/90 text-lg">Develop AI targeting system, integrate firing mechanism, and build web interface</span>
                 </div>
                 <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center">
                   <span className="text-white text-sm font-bold">3</span>
@@ -292,7 +317,7 @@ export default function Week1() {
                   <span className="text-sm font-semibold text-white bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 rounded-full">Weeks 11-12</span>
                 </div>
                 <div className="flex-1">
-                  <span className="text-white/90 text-lg">Final assembly, testing, documentation, and presentation preparation</span>
+                  <span className="text-white/90 text-lg">Safety testing, accuracy calibration, final assembly, and demonstration</span>
                 </div>
                 <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center">
                   <span className="text-white text-sm font-bold">4</span>
@@ -318,29 +343,37 @@ export default function Week1() {
               <div className="space-y-3">
                 <div className="flex items-center">
                   <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
-                  <span className="text-white/90">Accurately monitor soil moisture, light, and environmental conditions</span>
+                  <span className="text-white/90">Detect and track moving targets in real-time with &gt;90% accuracy</span>
                 </div>
                 <div className="flex items-center">
                   <span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
-                  <span className="text-white/90">Automatically water plants when soil moisture drops below threshold</span>
+                  <span className="text-white/90">Automatically aim and fire BB pellets at detected targets</span>
                 </div>
                 <div className="flex items-center">
                   <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
-                  <span className="text-white/90">Provide real-time data through a user-friendly web interface</span>
+                  <span className="text-white/90">Achieve target hit rate of &gt;70% within 10-foot range</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
+                  <span className="text-white/90">Respond to moving targets within 2-second detection window</span>
                 </div>
               </div>
               <div className="space-y-3">
                 <div className="flex items-center">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                  <span className="text-white/90">Implement robust safety protocols and emergency stop functionality</span>
+                </div>
+                <div className="flex items-center">
                   <span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
-                  <span className="text-white/90">Send notifications when manual intervention is needed</span>
+                  <span className="text-white/90">Provide live video feed and remote control through web interface</span>
                 </div>
                 <div className="flex items-center">
                   <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
-                  <span className="text-white/90">Operate reliably for extended periods without maintenance</span>
+                  <span className="text-white/90">Log targeting data and analytics for performance analysis</span>
                 </div>
                 <div className="flex items-center">
                   <span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
-                  <span className="text-white/90">Demonstrate measurable improvement in plant health</span>
+                  <span className="text-white/90">Operate continuously for 30+ minutes without mechanical failure</span>
                 </div>
               </div>
             </div>
@@ -358,10 +391,11 @@ export default function Week1() {
             <h3 className="text-3xl font-bold text-white">Reflection</h3>
           </div>
           <p className="text-xl text-white/80 leading-relaxed">
-            This project excites me because it combines multiple aspects of digital fabrication while solving 
-            a real-world problem. It will challenge me to integrate 3D design, electronics, programming, and 
-            user interface design. The iterative nature of the project aligns well with the course structure, 
-            allowing me to build complexity week by week while applying newly learned skills.
+            This project excites me because it pushes the boundaries of what&apos;s possible with digital fabrication, 
+            combining cutting-edge AI technology with precision mechanical engineering. It will challenge me to integrate 
+            3D design, advanced electronics, computer vision, and real-time control systems. The project&apos;s emphasis on 
+            safety protocols and precision targeting will teach valuable lessons about responsible engineering and the 
+            ethical considerations of autonomous systems.
           </p>
         </div>
       </div>
