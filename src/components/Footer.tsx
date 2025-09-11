@@ -3,7 +3,7 @@ export default function Footer() {
   
   return (
     <footer className="relative z-10 mt-16">
-      <div className="glass-card mx-4 sm:mx-6 lg:mx-8 mb-6 p-6 rounded-2xl">
+      <div className="nav-glass p-6">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-white/80 text-sm">
             © {currentYear} Matthew Vu. All rights reserved.

@@ -13,8 +13,8 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 w-full z-50 mt-6">
-      <div className="glass-card mx-4 sm:mx-6 lg:mx-8 p-6 rounded-2xl">
+    <nav className="fixed top-0 left-0 right-0 w-full z-50">
+      <div className="nav-glass p-4 sm:p-5 md:p-6">
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-between items-center">
             <Link href="/" className="text-xl font-bold text-white hover:text-blue-200 transition-colors">
@@ -25,10 +25,10 @@ const Navigation = () => {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`relative text-sm font-medium transition-all duration-500 ease-out hover:text-white ${
+                  className={`text-sm font-medium transition-all duration-300 ease-out ${
                     pathname === item.href
-                      ? 'text-white active'
-                      : 'text-white/70 hover:text-white/90'
+                      ? 'text-transparent bg-gradient-to-r from-blue-200 to-purple-200 bg-clip-text'
+                      : 'text-white/80 hover:text-transparent hover:bg-gradient-to-r hover:from-blue-200 hover:to-purple-200 hover:bg-clip-text'
                   }`}
                 >
                   {item.label}
