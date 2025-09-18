@@ -9,7 +9,7 @@ export default function Week1() {
               Week 1
             </span>
             <span className="text-sm text-white/60">
-              January 2024
+              September 2025
             </span>
           </div>
           <h1 className="text-5xl font-bold text-white mb-6">

@@ -4,6 +4,13 @@ export default function About() {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
+          <div className="mb-8">
+            <img 
+              src="/ps70-website/profile_image.jpeg" 
+              alt="Matthew Vu" 
+              className="w-48 h-48 rounded-full mx-auto shadow-2xl object-cover border-4 border-white/20"
+            />
+          </div>
           <h1 className="text-5xl font-bold text-white mb-6">About Me</h1>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded-full"></div>
           <p className="text-xl text-white/80 mt-6 max-w-2xl mx-auto mb-8">
@@ -23,22 +30,24 @@ export default function About() {
             
             <div className="space-y-6 text-lg text-white/80 leading-relaxed">
               <p>
-                I&apos;m a student in PS70: Introduction to Digital Fabrication, excited to explore the intersection of 
-                design, engineering, and creativity. This course represents my journey into the world of making, 
-                where digital tools meet physical creation.
+                I&apos;m Matthew Vu, a junior at Harvard College studying Computer Science and living in Lowell House. 
+                Originally from Portland, Oregon, I&apos;m currently taking PS70: Introduction to Digital Fabrication, 
+                excited to explore the intersection of design, engineering, and creativity. This course represents 
+                my journey into the world of making, where digital tools meet physical creation.
               </p>
               
               <p>
                 My interests span across technology, design, and hands-on problem solving. I&apos;m particularly drawn 
-                to projects that combine multiple disciplines and have real-world applications. Through this course, 
-                I hope to develop skills in 3D design, electronics, programming, and various fabrication techniques 
-                that I can apply to robotics projects.
+                to projects that combine multiple disciplines and have real-world applications - especially in robotics, 
+                defense, and aerospace. Through this course, I hope to develop skills in 3D design, electronics, 
+                programming, and various fabrication techniques that I can apply to future robotics projects.
               </p>
 
               <p>
                 When I&apos;m not working on assignments, you can find me at the gym lifting weights or on the tennis court
-                improving my game. I believe that the best learning happens through experimentation and iteration, 
-                and I&apos;m excited to document that process throughout this semester.
+                improving my game. Fun fact: I have little sisters who are identical twins! I believe that the best 
+                learning happens through experimentation and iteration, and I&apos;m excited to document that process 
+                throughout this semester.
               </p>
             </div>
           </div>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Home() {
   const assignments = [
     { week: 1, title: 'Introduction and Documentation', href: '/week1', completed: true },
-    { week: 2, title: '2D Design & Cutting', href: '/week2', completed: false },
+    { week: 2, title: '2D Design & Cutting', href: '/week2', completed: true },
     { week: 3, title: 'Hand Tools and Fabrication', href: '/week3', completed: false },
     { week: 4, title: 'Microcontroller Programming', href: '/week4', completed: false },
     { week: 5, title: '3D Design & Printing', href: '/week5', completed: false },
@@ -111,7 +111,7 @@ export default function Home() {
             </h3>
           </div>
           <p className="text-white/70 text-lg leading-relaxed">
-            Explore my ambitious smart plant monitoring system proposal and development plan.
+            Explore my ambitious AI-controlled auto-targeting turret system proposal and development plan.
           </p>
         </Link>
       </div>
