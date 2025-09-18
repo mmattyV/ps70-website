@@ -308,6 +308,7 @@ export default function Week2() {
           </div>
         </div>
 
+
         {/* Fusion 360 Tutorial */}
         <div className="mb-16">
           <div className="mb-8">
@@ -458,6 +459,181 @@ export default function Week2() {
               Download the complete Fusion 360 file to explore the parametric model, examine the construction 
               history, and see how the bottle was created step-by-step. This file includes all sketches, 
               features, and parameters used in the tutorial.
+            </p>
+          </div>
+        </div>
+
+        {/* Household Object Modeling */}
+        <div className="mb-16">
+          <div className="mb-8">
+            <div className="flex items-center mb-6">
+              <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center mr-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h2 className="text-3xl font-bold text-white">Household Object Modeling</h2>
+            </div>
+          </div>
+
+          <div className="text-section rounded-2xl p-8 mb-8">
+            <h3 className="text-2xl font-semibold text-white mb-6">Precision Measurement & CAD Modeling</h3>
+            <p className="text-white/80 leading-relaxed text-lg mb-6">
+              To develop my measurement and modeling skills, I selected household objects to precisely measure with 
+              calipers and recreate in Fusion 360. This exercise taught me the importance of accurate measurement 
+              and attention to detail when reverse-engineering real-world objects into digital models.
+            </p>
+          </div>
+
+          {/* Object Models Grid */}
+          <div className="grid gap-8 lg:grid-cols-2 mb-8">
+            {/* M5 Screw Views */}
+            <div className="space-y-6">
+              <div className="text-section rounded-2xl p-6">
+                <div className="mb-6">
+                  <img 
+                    src="/ps70-website/week2/screw_1.png" 
+                    alt="M5 Screw Model - Side View" 
+                    className="w-full h-auto rounded-xl shadow-2xl"
+                  />
+                </div>
+                <div className="space-y-3">
+                  <h4 className="text-xl font-semibold text-white flex items-center">
+                    <span className="w-3 h-3 bg-yellow-400 rounded-full mr-3"></span>
+                    M5 Screw - Side View
+                  </h4>
+                  <p className="text-white/80 leading-relaxed">
+                    Detailed model of an M5 machine screw showing the threaded shaft and hex socket head. 
+                    Measured with calipers to capture precise dimensions including thread pitch, head diameter, 
+                    and overall length for accurate representation.
+                  </p>
+                </div>
+              </div>
+
+              <div className="text-section rounded-2xl p-6">
+                <div className="mb-6">
+                  <img 
+                    src="/ps70-website/week2/screw_2.png" 
+                    alt="M5 Screw Model - Top View" 
+                    className="w-full h-auto rounded-xl shadow-2xl"
+                  />
+                </div>
+                <div className="space-y-3">
+                  <h4 className="text-xl font-semibold text-white flex items-center">
+                    <span className="w-3 h-3 bg-orange-400 rounded-full mr-3"></span>
+                    M5 Screw - Top View
+                  </h4>
+                  <p className="text-white/80 leading-relaxed">
+                    Top-down view showcasing the hexagonal socket detail and circular head profile. 
+                    The threaded features were created using Fusion 360's thread tool with proper 
+                    M5 specifications for realistic appearance and functionality.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottle Model */}
+            <div className="text-section rounded-2xl p-6">
+              <div className="mb-6">
+                <img 
+                  src="/ps70-website/week2/poke_bottle.png" 
+                  alt="Bottle Model" 
+                  className="w-full h-auto rounded-xl shadow-2xl"
+                />
+              </div>
+              <div className="space-y-3">
+                <h4 className="text-xl font-semibold text-white flex items-center">
+                  <span className="w-3 h-3 bg-yellow-400 rounded-full mr-3"></span>
+                  Household Bottle Model
+                </h4>
+                <p className="text-white/80 leading-relaxed">
+                  Accurate recreation of a household bottle using revolve features and precise measurements. 
+                  Captured the bottle's unique proportions, neck threading, and cap details through careful 
+                  caliper measurements and parametric modeling techniques. The model demonstrates proper 
+                  use of constraints and dimensional relationships.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Assembly Model */}
+          <div className="text-section rounded-2xl p-8 mb-8 bg-gradient-to-br from-yellow-500/20 to-orange-500/20">
+            <div className="mb-6">
+              <img 
+                src="/ps70-website/week2/model_assembly.png" 
+                alt="Complete Assembly Model" 
+                className="w-full h-auto rounded-xl shadow-2xl"
+              />
+            </div>
+            <div className="space-y-4">
+              <h4 className="text-2xl font-semibold text-white flex items-center">
+                <span className="w-4 h-4 bg-yellow-400 rounded-full mr-3"></span>
+                Multi-Component Assembly
+              </h4>
+              <p className="text-white/80 leading-relaxed text-lg mb-4">
+                Created a comprehensive assembly combining my custom-modeled M5 screw and bottle with a 
+                third component - a laser tree dovetail mount that I sourced from GrabCAD. This exercise demonstrated skills in:
+              </p>
+              <div className="mb-4">
+                <a 
+                  href="https://grabcad.com/library/laser-tree-dovetail-mount-3d-printing-part-1" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-200 text-sm"
+                >
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                  Third Component Source: Laser Tree Dovetail Mount
+                </a>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2 mt-6">
+                <ul className="space-y-2 text-white/80">
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>
+                    Precision measurement with calipers
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>
+                    Reverse engineering from physical objects
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>
+                    Multi-component assembly creation
+                  </li>
+                </ul>
+                <ul className="space-y-2 text-white/80">
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>
+                    Integration of external CAD models
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>
+                    Proper joint and constraint application
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>
+                    Assembly visualization and presentation
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-section rounded-2xl p-8 bg-gradient-to-br from-orange-500/20 to-red-500/20">
+            <div className="flex items-center mb-4">
+              <div className="w-10 h-10 bg-gradient-to-br from-orange-400 to-red-500 rounded-lg flex items-center justify-center mr-3">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-white">Measurement & Modeling Insights</h3>
+            </div>
+            <p className="text-white/80 leading-relaxed text-lg">
+              This exercise highlighted the importance of precision in digital fabrication. Using calipers to measure 
+              real objects taught me to appreciate tolerances and manufacturing considerations. Creating assemblies 
+              with multiple components, including external models from GrabCAD, demonstrated how collaborative 
+              design works in practice and how to integrate various sources into cohesive projects.
             </p>
           </div>
         </div>
