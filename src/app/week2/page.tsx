@@ -572,21 +572,42 @@ export default function Week2() {
               </h4>
               <p className="text-white/80 leading-relaxed text-lg mb-4">
                 Created a comprehensive assembly combining my custom-modeled M5 screw and bottle with a 
-                third component - a laser tree dovetail mount that I sourced from GrabCAD. This exercise demonstrated skills in:
+                third component - a laser tree dovetail mount that I sourced from the GrabCAD community library.
               </p>
-              <div className="mb-4">
-                <a 
-                  href="https://grabcad.com/library/laser-tree-dovetail-mount-3d-printing-part-1" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-200 text-sm"
-                >
-                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                  Third Component Source: Laser Tree Dovetail Mount
-                </a>
+              <div className="mb-6 p-4 bg-white/5 rounded-lg border border-white/10">
+                <div className="flex items-start space-x-3">
+                  <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="text-white font-semibold mb-2">Third Component: Laser Tree Dovetail Mount</h5>
+                    <p className="text-white/70 text-sm leading-relaxed mb-3">
+                      A precision-engineered dovetail mounting system designed for laser cutting applications. 
+                      This component demonstrates advanced CAD modeling techniques for creating interlocking 
+                      mechanical joints commonly used in optical and precision equipment mounting systems.
+                    </p>
+                    <a 
+                      href="https://grabcad.com/library/laser-tree-dovetail-mount-3d-printing-part-1" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors duration-200 text-sm"
+                    >
+                      <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                      View on GrabCAD Community Library
+                    </a>
+                    <p className="text-white/50 text-xs mt-2">
+                      Source: GrabCAD Community - Open CAD model repository for collaborative engineering
+                    </p>
+                  </div>
+                </div>
               </div>
+              <p className="text-white/80 leading-relaxed text-lg mb-6">
+                This exercise demonstrated skills in:
+              </p>
               <div className="grid gap-4 md:grid-cols-2 mt-6">
                 <ul className="space-y-2 text-white/80">
                   <li className="flex items-center">
