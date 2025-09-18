@@ -525,7 +525,7 @@ export default function Week2() {
                   </h4>
                   <p className="text-white/80 leading-relaxed">
                     Top-down view showcasing the hexagonal socket detail and circular head profile. 
-                    The threaded features were created using Fusion 360's thread tool with proper 
+                    The threaded features were created using Fusion 360&apos;s thread tool with proper 
                     M5 specifications for realistic appearance and functionality.
                   </p>
                 </div>
@@ -548,7 +548,7 @@ export default function Week2() {
                 </h4>
                 <p className="text-white/80 leading-relaxed">
                   Accurate recreation of a household bottle using revolve features and precise measurements. 
-                  Captured the bottle's unique proportions, neck threading, and cap details through careful 
+                  Captured the bottle&apos;s unique proportions, neck threading, and cap details through careful 
                   caliper measurements and parametric modeling techniques. The model demonstrates proper 
                   use of constraints and dimensional relationships.
                 </p>
