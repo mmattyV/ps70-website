@@ -502,11 +502,21 @@ export default function Week2() {
                     <span className="w-3 h-3 bg-yellow-400 rounded-full mr-3"></span>
                     M5 Screw - Side View
                   </h4>
-                  <p className="text-white/80 leading-relaxed">
+                  <p className="text-white/80 leading-relaxed mb-4">
                     Detailed model of an M5 machine screw showing the threaded shaft and hex socket head. 
                     Measured with calipers to capture precise dimensions including thread pitch, head diameter, 
                     and overall length for accurate representation.
                   </p>
+                  <a 
+                    href="/ps70-website/week2/M5 Screw.f3d" 
+                    download="M5_Screw.f3d"
+                    className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-yellow-500 to-orange-500 text-white text-sm font-semibold rounded-lg hover:from-yellow-600 hover:to-orange-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                  >
+                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    </svg>
+                    Download Screw .f3d
+                  </a>
                 </div>
               </div>
 
@@ -546,12 +556,22 @@ export default function Week2() {
                   <span className="w-3 h-3 bg-yellow-400 rounded-full mr-3"></span>
                   Household Bottle Model
                 </h4>
-                <p className="text-white/80 leading-relaxed">
+                <p className="text-white/80 leading-relaxed mb-4">
                   Accurate recreation of a household bottle using revolve features and precise measurements. 
                   Captured the bottle&apos;s unique proportions, neck threading, and cap details through careful 
                   caliper measurements and parametric modeling techniques. The model demonstrates proper 
                   use of constraints and dimensional relationships.
                 </p>
+                <a 
+                  href="/ps70-website/week2/Cork and Bottle.f3d" 
+                  download="Cork_and_Bottle.f3d"
+                  className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-yellow-500 to-orange-500 text-white text-sm font-semibold rounded-lg hover:from-yellow-600 hover:to-orange-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                >
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Download Bottle .f3d
+                </a>
               </div>
             </div>
           </div>
@@ -637,6 +657,26 @@ export default function Week2() {
                     Assembly visualization and presentation
                   </li>
                 </ul>
+              </div>
+            </div>
+            
+            {/* Assembly Download */}
+            <div className="mt-6 pt-6 border-t border-white/10">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h5 className="text-lg font-semibold text-white mb-2">Download Complete Assembly</h5>
+                  <p className="text-white/70 text-sm">Multi-component assembly file (.f3z format)</p>
+                </div>
+                <a 
+                  href="/ps70-website/week2/Assembly.f3z" 
+                  download="Multi_Component_Assembly.f3z"
+                  className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-semibold rounded-lg hover:from-yellow-600 hover:to-orange-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                >
+                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  Download Assembly .f3z
+                </a>
               </div>
             </div>
           </div>
