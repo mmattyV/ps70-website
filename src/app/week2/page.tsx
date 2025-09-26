@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Week2() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -87,9 +89,11 @@ export default function Week2() {
             {/* CAD Sketch */}
             <div className="text-section rounded-2xl p-6">
               <div className="mb-6">
-                <img 
+                <Image 
                   src="/ps70-website/week2/cad_sketch.png" 
                   alt="CAD Sketch of Pentagonal Prism" 
+                  width={600}
+                  height={400}
                   className="w-full h-auto rounded-xl shadow-2xl"
                 />
               </div>
@@ -109,9 +113,11 @@ export default function Week2() {
             {/* CAD Assembly */}
             <div className="text-section rounded-2xl p-6">
               <div className="mb-6">
-                <img 
+                <Image 
                   src="/ps70-website/week2/cad_assembly.png" 
                   alt="CAD Assembly View" 
+                  width={600}
+                  height={400}
                   className="w-full h-auto rounded-xl shadow-2xl"
                 />
               </div>
@@ -164,9 +170,11 @@ export default function Week2() {
             {/* Box Standing */}
             <div className="text-section rounded-2xl p-6">
               <div className="mb-6">
-                <img 
+                <Image 
                   src="/ps70-website/week2/box_standing.jpeg" 
                   alt="Assembled Pentagonal Box Standing" 
+                  width={600}
+                  height={800}
                   className="w-full h-auto rounded-xl shadow-2xl"
                 />
               </div>
@@ -186,9 +194,11 @@ export default function Week2() {
             {/* Box Open */}
             <div className="text-section rounded-2xl p-6">
               <div className="mb-6">
-                <img 
+                <Image 
                   src="/ps70-website/week2/box_open.jpeg" 
                   alt="Pentagonal Box Opened Showing Interior" 
+                  width={600}
+                  height={800}
                   className="w-full h-auto rounded-xl shadow-2xl"
                 />
               </div>
@@ -350,9 +360,11 @@ export default function Week2() {
             {/* Bottle View 1 */}
             <div className="text-section rounded-2xl p-6">
               <div className="mb-6">
-                <img 
+                <Image 
                   src="/ps70-website/week2/bottle_1.png" 
                   alt="Glass Soda Bottle - Front View" 
+                  width={600}
+                  height={800}
                   className="w-full h-auto rounded-xl shadow-2xl"
                 />
               </div>
@@ -372,9 +384,11 @@ export default function Week2() {
             {/* Bottle View 2 */}
             <div className="text-section rounded-2xl p-6">
               <div className="mb-6">
-                <img 
+                <Image 
                   src="/ps70-website/week2/bottle_2.png" 
                   alt="Glass Soda Bottle - Perspective View" 
+                  width={600}
+                  height={800}
                   className="w-full h-auto rounded-xl shadow-2xl"
                 />
               </div>
@@ -491,9 +505,11 @@ export default function Week2() {
             <div className="space-y-6">
               <div className="text-section rounded-2xl p-6">
                 <div className="mb-6">
-                  <img 
+                  <Image 
                     src="/ps70-website/week2/screw_1.png" 
                     alt="M5 Screw Model - Side View" 
+                    width={600}
+                    height={400}
                     className="w-full h-auto rounded-xl shadow-2xl"
                   />
                 </div>
@@ -522,9 +538,11 @@ export default function Week2() {
 
               <div className="text-section rounded-2xl p-6">
                 <div className="mb-6">
-                  <img 
+                  <Image 
                     src="/ps70-website/week2/screw_2.png" 
                     alt="M5 Screw Model - Top View" 
+                    width={600}
+                    height={400}
                     className="w-full h-auto rounded-xl shadow-2xl"
                   />
                 </div>
@@ -545,9 +563,11 @@ export default function Week2() {
             {/* Bottle Model */}
             <div className="text-section rounded-2xl p-6">
               <div className="mb-6">
-                <img 
+                <Image 
                   src="/ps70-website/week2/poke_bottle.png" 
                   alt="Bottle Model" 
+                  width={600}
+                  height={800}
                   className="w-full h-auto rounded-xl shadow-2xl"
                 />
               </div>
@@ -579,9 +599,11 @@ export default function Week2() {
           {/* Assembly Model */}
           <div className="text-section rounded-2xl p-8 mb-8 bg-gradient-to-br from-yellow-500/20 to-orange-500/20">
             <div className="mb-6">
-              <img 
+              <Image 
                 src="/ps70-website/week2/model_assembly.png" 
                 alt="Complete Assembly Model" 
+                width={800}
+                height={600}
                 className="w-full h-auto rounded-xl shadow-2xl"
               />
             </div>

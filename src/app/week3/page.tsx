@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Week3() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -86,9 +88,11 @@ export default function Week3() {
           {/* Movement GIF */}
           <div className="text-section rounded-2xl p-8 mb-8 bg-gradient-to-br from-green-500/20 to-blue-500/20">
             <div className="mb-6 text-center">
-              <img 
+              <Image 
                 src="/ps70-website/week3/movement.gif" 
                 alt="Kinetic Sculpture in Motion - Resurrection Movement" 
+                width={800}
+                height={600}
                 className="w-full max-w-2xl mx-auto rounded-xl shadow-2xl"
               />
             </div>
@@ -100,7 +104,7 @@ export default function Week3() {
               <p className="text-white/80 leading-relaxed text-lg">
                 The completed kinetic sculpture demonstrates smooth vertical movement through the scotch yoke mechanism. 
                 The continuous motion creates a mesmerizing effect that draws viewers into contemplating the 
-                significance of Jesus's resurrection and victory over death. The motorized system operates reliably with proper mechanical connections.
+                significance of Jesus&apos;s resurrection and victory over death. The motorized system operates reliably with proper mechanical connections.
               </p>
             </div>
           </div>
@@ -110,9 +114,11 @@ export default function Week3() {
             {/* Front View */}
             <div className="text-section rounded-2xl p-6">
               <div className="mb-6">
-                <img 
+                <Image 
                   src="/ps70-website/week3/front.jpg" 
                   alt="Kinetic Sculpture - Front View" 
+                  width={600}
+                  height={800}
                   className="w-full h-auto rounded-xl shadow-2xl"
                 />
               </div>
@@ -132,9 +138,11 @@ export default function Week3() {
             {/* Diagonal View */}
             <div className="text-section rounded-2xl p-6">
               <div className="mb-6">
-                <img 
+                <Image 
                   src="/ps70-website/week3/front_diag.jpg" 
                   alt="Kinetic Sculpture - Front Diagonal View" 
+                  width={600}
+                  height={800}
                   className="w-full h-auto rounded-xl shadow-2xl"
                 />
               </div>
@@ -154,9 +162,11 @@ export default function Week3() {
             {/* Top Angle View */}
             <div className="text-section rounded-2xl p-6">
               <div className="mb-6">
-                <img 
+                <Image 
                   src="/ps70-website/week3/top_angle.jpg" 
                   alt="Kinetic Sculpture - Top Angle View" 
+                  width={600}
+                  height={800}
                   className="w-full h-auto rounded-xl shadow-2xl"
                 />
               </div>
@@ -176,9 +186,11 @@ export default function Week3() {
             {/* Back Angle View */}
             <div className="text-section rounded-2xl p-6">
               <div className="mb-6">
-                <img 
+                <Image 
                   src="/ps70-website/week3/back_angle.jpg" 
                   alt="Kinetic Sculpture - Back Angle View" 
+                  width={600}
+                  height={800}
                   className="w-full h-auto rounded-xl shadow-2xl"
                 />
               </div>
@@ -188,7 +200,7 @@ export default function Week3() {
                   Back Angle - Construction Details
                 </h4>
                 <p className="text-white/80 leading-relaxed">
-                  The rear perspective shows the finger joint construction method inherited from Week 2's 
+                  The rear perspective shows the finger joint construction method inherited from Week 2&apos;s 
                   box project, demonstrating how previous learning was applied to create the housing for 
                   this more complex kinetic mechanism.
                 </p>
@@ -214,9 +226,11 @@ export default function Week3() {
           {/* CAD Model Image */}
           <div className="text-section rounded-2xl p-8 mb-8 bg-gradient-to-br from-cyan-500/20 to-blue-500/20">
             <div className="mb-6">
-              <img 
+              <Image 
                 src="/ps70-website/week3/fusion.png" 
                 alt="Fusion 360 CAD Model of Kinetic Sculpture Mechanism" 
+                width={800}
+                height={600}
                 className="w-full h-auto rounded-xl shadow-2xl"
               />
             </div>
@@ -305,9 +319,11 @@ export default function Week3() {
           {/* Failed Attempt Image */}
           <div className="text-section rounded-2xl p-8 mb-8 bg-gradient-to-br from-red-500/20 to-orange-500/20">
             <div className="mb-6">
-              <img 
+              <Image 
                 src="/ps70-website/week3/broken.jpg" 
                 alt="Failed First Attempt - Broken Kinetic Sculpture" 
+                width={800}
+                height={600}
                 className="w-full h-auto rounded-xl shadow-2xl"
               />
             </div>
@@ -489,7 +505,7 @@ export default function Week3() {
                   Precision in Fabrication
                 </h4>
                 <p className="text-white/80 leading-relaxed text-lg">
-                  The laser cutter's precision was crucial for creating exact mounting holes for screws and ensuring 
+                  The laser cutter&apos;s precision was crucial for creating exact mounting holes for screws and ensuring 
                   proper alignment of moving parts. This project reinforced the importance of planning for assembly 
                   during the design phase and considering how each component will be manufactured and connected.
                 </p>

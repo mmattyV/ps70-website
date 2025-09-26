@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function About() {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -5,9 +7,11 @@ export default function About() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="mb-8">
-            <img 
+            <Image 
               src="/ps70-website/profile_image.jpeg" 
               alt="Matthew Vu" 
+              width={192}
+              height={192}
               className="w-48 h-48 rounded-full mx-auto shadow-2xl object-cover border-4 border-white/20"
             />
           </div>
