@@ -15,10 +15,10 @@ export default function Week3() {
             </span>
           </div>
           <h1 className="text-5xl font-bold text-white mb-6">
-            Kinetic Sculpture: Resurrection
+            Kinetic Sculpture: The Thief on the Cross
           </h1>
           <p className="text-xl text-white/80 max-w-3xl mx-auto mb-8">
-            Creating a motorized kinetic sculpture using a scotch yoke mechanism to symbolize the resurrection of Jesus through vertical movement on the cross.
+            Creating a motorized kinetic sculpture using a scotch yoke mechanism to depict the thief who was crucified alongside Jesus, with vertical movement symbolizing his final moments.
           </p>
         </div>
 
@@ -36,12 +36,12 @@ export default function Week3() {
           </div>
           
           <div className="text-section rounded-2xl p-8 mb-8">
-            <h3 className="text-2xl font-semibold text-white mb-6">Resurrection Kinetic Sculpture</h3>
+            <h3 className="text-2xl font-semibold text-white mb-6">The Thief on the Cross: A Kinetic Sculpture</h3>
             <p className="text-white/80 leading-relaxed text-lg mb-6">
-              This kinetic sculpture explores the powerful symbolism of resurrection through mechanical movement. 
-              Using a scotch yoke mechanism driven by a DC motor, the sculpture creates a continuous vertical motion 
-              that raises and lowers a figure of Jesus on the cross, symbolizing the resurrection - the central belief 
-              in Christianity that Jesus died to save us from sin and rose again, demonstrating victory over death.
+              This kinetic sculpture depicts the thief who was crucified on the left side of Jesus. Using a scotch yoke 
+              mechanism driven by a DC motor, the sculpture creates a continuous vertical motion that raises and lowers 
+              the figure on the cross, representing the struggle and suffering of crucifixion. The piece explores themes 
+              of mortality, judgment, and the human condition through mechanical movement.
             </p>
             <div className="grid gap-6 md:grid-cols-2">
               <div className="space-y-4">
@@ -99,12 +99,13 @@ export default function Week3() {
             <div className="text-center">
               <h4 className="text-2xl font-semibold text-white mb-4 flex items-center justify-center">
                 <span className="w-4 h-4 bg-green-400 rounded-full mr-3"></span>
-                Resurrection in Motion
+                Kinetic Movement in Action
               </h4>
               <p className="text-white/80 leading-relaxed text-lg">
                 The completed kinetic sculpture demonstrates smooth vertical movement through the scotch yoke mechanism. 
-                The continuous motion creates a mesmerizing effect that draws viewers into contemplating the 
-                significance of Jesus&apos;s resurrection and victory over death. The motorized system operates reliably with proper mechanical connections.
+                The continuous motion creates a mesmerizing effect that represents the final struggles of the thief on 
+                the cross, drawing viewers into contemplating themes of suffering, mortality, and human nature. The 
+                motorized system operates reliably with proper mechanical connections.
               </p>
             </div>
           </div>
@@ -253,8 +254,8 @@ export default function Week3() {
             <p className="text-white/80 leading-relaxed text-lg mb-6">
               The scotch yoke mechanism converts the rotational motion of the DC motor into linear vertical motion. 
               This mechanical system consists of a rotating crank connected to a sliding yoke that moves up and down 
-              along a linear path. The mechanism provides smooth, sinusoidal motion perfect for the symbolic 
-              representation of resurrection.
+              along a linear path. The mechanism provides smooth, sinusoidal motion that evokes the rising and falling 
+              movements of a person struggling on the cross.
             </p>
             <div className="grid gap-6 md:grid-cols-2">
               <div className="space-y-4">
