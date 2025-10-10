@@ -6,7 +6,7 @@ export default function Home() {
     { week: 2, title: '2D Design & Cutting', href: '/week2', completed: true },
     { week: 3, title: 'Hand Tools and Fabrication', href: '/week3', completed: true },
     { week: 4, title: 'Microcontroller Programming', href: '/week4', completed: true },
-    { week: 5, title: '3D Design & Printing', href: '/week5', completed: false },
+    { week: 5, title: '3D Design & Printing', href: '/week5', completed: true },
     { week: 6, title: 'Electronic Input Devices', href: '/week6', completed: false },
     { week: 7, title: 'Electronic Output Devices', href: '/week7', completed: false },
     { week: 8, title: 'CNC Milling', href: '/week8', completed: false },

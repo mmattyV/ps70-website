@@ -102,10 +102,35 @@ export default function Week1() {
                 </svg>
               </div>
               <h3 className="text-4xl font-bold text-white mb-4">AI-Controlled Turret System</h3>
-              <p className="text-xl text-white/80 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-xl text-white/80 leading-relaxed max-w-3xl mx-auto mb-8">
                 An intelligent automated turret that uses computer vision and AI to detect, track, and engage moving targets 
-                with BB pellets. Combining machine learning, servo control systems, and real-time image processing for precision targeting.
+                with a Nerf gun. Combining machine learning, servo control systems, and real-time image processing for precision targeting.
               </p>
+              
+              {/* 3D Model Viewer */}
+              <div className="max-w-4xl mx-auto mb-8">
+                <div className="relative w-full rounded-xl overflow-hidden shadow-2xl bg-gray-900/50">
+                  <iframe 
+                    src="https://college964.autodesk360.com/shares/public/SH28cd1QT2badd0ea72ba70184182d9b2286?mode=embed" 
+                    width="100%" 
+                    height="480" 
+                    allowFullScreen 
+                    className="w-full"
+                    style={{ border: 'none' }}
+                  ></iframe>
+                </div>
+                <p className="text-center text-white/60 mt-4">
+                  Interactive 3D model of the turret pan-tilt base (Week 5 progress)
+                </p>
+              </div>
+              
+              <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4 max-w-2xl mx-auto">
+                <p className="text-white/80 text-sm leading-relaxed">
+                  <strong className="text-blue-300">Current Status:</strong> The model shows the completed pan-tilt base with integrated 
+                  lazy susan mechanism. The finalized system will include the vertical tilt unit and trigger pull mechanism for 
+                  full 2-axis targeting control.
+                </p>
+              </div>
             </div>
 
             {/* YouTube Video Embed */}
@@ -137,7 +162,7 @@ export default function Week1() {
                   <li>• Real-time object detection & tracking</li>
                   <li>• AI-powered target identification</li>
                   <li>• Precision servo-controlled aiming</li>
-                  <li>• Automated BB pellet firing system</li>
+                  <li>• Automated Nerf dart firing system</li>
                   <li>• Safety protocols & emergency stop</li>
                   <li>• Live video feed & control interface</li>
                   <li>• Target hit accuracy analytics</li>
@@ -178,7 +203,7 @@ export default function Week1() {
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-red-400 rounded-full mr-3"></span>
-                  BB pellet magazine & feed system
+                  Nerf dart magazine & feed system
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-orange-400 rounded-full mr-3"></span>
@@ -206,7 +231,7 @@ export default function Week1() {
               <ul className="text-white/80 space-y-2">
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3"></span>
-                  Raspberry Pi 4 (main controller)
+                  ESP32 (main controller)
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-3"></span>
@@ -242,7 +267,9 @@ export default function Week1() {
               <ul className="text-white/80 space-y-2">
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></span>
-                  OpenCV object detection
+                  <a href="https://edgeimpulse.com/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-300 transition-colors">
+                    Edge Impulse
+                  </a>
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-pink-400 rounded-full mr-3"></span>
@@ -268,6 +295,230 @@ export default function Week1() {
             </div>
           </div>
 
+          {/* Bill of Materials */}
+          <div className="text-section rounded-2xl p-8 mb-8">
+            <div className="flex items-center mb-6">
+              <div className="w-12 h-12 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl flex items-center justify-center mr-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+              </div>
+              <h4 className="text-2xl font-bold text-white">Bill of Materials</h4>
+            </div>
+            
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {/* 3D Printing Materials */}
+              <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                <h5 className="text-lg font-semibold text-white mb-4 flex items-center">
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full mr-3"></span>
+                  3D Printing
+                </h5>
+                <ul className="text-white/70 space-y-3 text-sm">
+                  <li className="flex justify-between items-center gap-2">
+                    <span>PLA Filament (~500g)</span>
+                    <span className="text-green-400 font-semibold">$12</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Support Material (~100g)</span>
+                    <span className="text-green-400 font-semibold">$3</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Electronics - Core */}
+              <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                <h5 className="text-lg font-semibold text-white mb-4 flex items-center">
+                  <span className="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                  Core Electronics
+                </h5>
+                <ul className="text-white/70 space-y-3 text-sm">
+                  <li className="flex justify-between items-center gap-2">
+                    <span>ESP32 Microcontroller (1x)</span>
+                    <span className="text-green-400 font-semibold">$8</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>ESP32-CAM Module (1x)</span>
+                    <span className="text-green-400 font-semibold">$12</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>USB Cable (1x)</span>
+                    <span className="text-green-400 font-semibold">$5</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Battery Pack (1x)</span>
+                    <span className="text-green-400 font-semibold">$15</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Servos */}
+              <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                <h5 className="text-lg font-semibold text-white mb-4 flex items-center">
+                  <span className="w-2 h-2 bg-purple-400 rounded-full mr-3"></span>
+                  Servo Motors
+                </h5>
+                <ul className="text-white/70 space-y-3 text-sm">
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Miuzei MG996R - Pan (1x)</span>
+                    <span className="text-green-400 font-semibold">$10</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Miuzei MG996R - Tilt (1x)</span>
+                    <span className="text-green-400 font-semibold">$10</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Miuzei MG996R - Trigger (1x)</span>
+                    <span className="text-green-400 font-semibold">$10</span>
+                  </li>
+                  <li className="text-xs text-white/50 mt-2 pt-2 border-t border-white/10">
+                    11kg·cm torque, 4.8-6.6V
+                  </li>
+                </ul>
+              </div>
+
+              {/* Wiring & Connectors */}
+              <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                <h5 className="text-lg font-semibold text-white mb-4 flex items-center">
+                  <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
+                  Wiring & Cables
+                </h5>
+                <ul className="text-white/70 space-y-3 text-sm">
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Jumper Wires M-M (20x)</span>
+                    <span className="text-green-400 font-semibold">$6</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Jumper Wires M-F (10x)</span>
+                    <span className="text-green-400 font-semibold">$4</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Steel Wire - 1m</span>
+                    <span className="text-green-400 font-semibold">$3</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Power Cable 5V (1x)</span>
+                    <span className="text-green-400 font-semibold">$4</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Hardware */}
+              <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                <h5 className="text-lg font-semibold text-white mb-4 flex items-center">
+                  <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3"></span>
+                  Hardware
+                </h5>
+                <ul className="text-white/70 space-y-3 text-sm">
+                  <li className="flex justify-between items-center gap-2">
+                    <span>M3 Screws & Nuts (20x)</span>
+                    <span className="text-green-400 font-semibold">$5</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>M4 Screws & Nuts (10x)</span>
+                    <span className="text-green-400 font-semibold">$4</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Washers - assorted (30x)</span>
+                    <span className="text-green-400 font-semibold">$3</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Small Springs (2-3x)</span>
+                    <span className="text-green-400 font-semibold">$2</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Weapon System */}
+              <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                <h5 className="text-lg font-semibold text-white mb-4 flex items-center">
+                  <span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>
+                  Weapon System
+                </h5>
+                <ul className="text-white/70 space-y-3 text-sm">
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Small Nerf Gun (1x)</span>
+                    <span className="text-green-400 font-semibold">$15</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Nerf Darts (50+)</span>
+                    <span className="text-green-400 font-semibold">$8</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Trigger Mechanism Parts</span>
+                    <span className="text-green-400 font-semibold">$5</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Additional Components */}
+              <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                <h5 className="text-lg font-semibold text-white mb-4 flex items-center">
+                  <span className="w-2 h-2 bg-red-400 rounded-full mr-3"></span>
+                  Additional
+                </h5>
+                <ul className="text-white/70 space-y-3 text-sm">
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Emergency Stop Button (1x)</span>
+                    <span className="text-green-400 font-semibold">$6</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>LED Indicators (3-5x)</span>
+                    <span className="text-green-400 font-semibold">$3</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Breadboard (1x)</span>
+                    <span className="text-green-400 font-semibold">$5</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Resistors (10x)</span>
+                    <span className="text-green-400 font-semibold">$2</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Optional/Future */}
+              <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                <h5 className="text-lg font-semibold text-white mb-4 flex items-center">
+                  <span className="w-2 h-2 bg-pink-400 rounded-full mr-3"></span>
+                  Optional/CNC
+                </h5>
+                <ul className="text-white/70 space-y-3 text-sm">
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Acrylic Sheet (1x)</span>
+                    <span className="text-green-400 font-semibold">$12</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Aluminum Sheet (1x)</span>
+                    <span className="text-green-400 font-semibold">$20</span>
+                  </li>
+                  <li className="flex justify-between items-center gap-2">
+                    <span>Bearings (2-3x)</span>
+                    <span className="text-green-400 font-semibold">$8</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-6 space-y-4">
+              <div className="p-6 bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-xl">
+                <div className="flex items-center justify-between">
+                  <h5 className="text-2xl font-bold text-white">Estimated Total Cost</h5>
+                  <span className="text-4xl font-bold text-green-400">$217</span>
+                </div>
+                <p className="text-white/70 text-sm mt-2">
+                  Based on estimated component costs. Actual pricing may vary by supplier and quantity.
+                </p>
+              </div>
+              
+              <div className="p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
+                <p className="text-white/80 text-sm leading-relaxed">
+                  <strong className="text-blue-300">Note:</strong> Quantities are estimates and may vary based on design iterations. 
+                  Additional fasteners, adhesives, and consumables may be needed during assembly and testing phases.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* Timeline & Milestones */}
           <div className="text-section rounded-2xl p-8 mb-8">
             <div className="flex items-center mb-6">
@@ -281,48 +532,91 @@ export default function Week1() {
             <div className="space-y-6">
               <div className="flex items-center gap-6 p-4 text-section rounded-xl">
                 <div className="flex-shrink-0">
-                  <span className="text-sm font-semibold text-white bg-gradient-to-r from-blue-500 to-purple-500 px-4 py-2 rounded-full">Weeks 2-4</span>
+                  <span className="text-sm font-semibold text-white bg-gradient-to-r from-blue-500 to-cyan-500 px-4 py-2 rounded-full">October</span>
                 </div>
                 <div className="flex-1">
-                  <span className="text-white/90 text-lg">Design and 3D print turret base, gimbal system, and firing mechanism</span>
+                  <div className="text-white/90 text-lg font-semibold mb-2">Complete CAD Modeling Phase</div>
+                  <ul className="text-white/70 text-sm space-y-1">
+                    <li>• Finish modeling pan-tilt base (completed in Week 5)</li>
+                    <li>• Design vertical tilt mechanism and mounting</li>
+                    <li>• Model trigger pull system and servo integration</li>
+                    <li>• Create Nerf gun mounting bracket</li>
+                    <li>• Finalize all component dimensions and tolerances</li>
+                  </ul>
                 </div>
-                <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-cyan-600 rounded-full flex items-center justify-center">
                   <span className="text-white text-sm font-bold">1</span>
                 </div>
               </div>
+
               <div className="flex items-center gap-6 p-4 text-section rounded-xl">
                 <div className="flex-shrink-0">
-                  <span className="text-sm font-semibold text-white bg-gradient-to-r from-green-500 to-blue-500 px-4 py-2 rounded-full">Weeks 5-7</span>
+                  <span className="text-sm font-semibold text-white bg-gradient-to-r from-green-500 to-emerald-500 px-4 py-2 rounded-full">November</span>
                 </div>
                 <div className="flex-1">
-                  <span className="text-white/90 text-lg">Assemble electronics, test servo controls, and implement basic camera tracking</span>
+                  <div className="text-white/90 text-lg font-semibold mb-2">Fabrication & Assembly</div>
+                  <ul className="text-white/70 text-sm space-y-1">
+                    <li>• 3D print all turret components with proper tolerances</li>
+                    <li>• Use CNC milling for flat structural components if needed</li>
+                    <li>• Iterate on prints based on fit and clearance testing</li>
+                    <li>• Assemble mechanical systems with servos and hardware</li>
+                    <li>• Test pan and tilt motion range and smoothness</li>
+                    <li>• Integrate Nerf gun and trigger mechanism</li>
+                    <li>• Complete physical assembly and initial testing</li>
+                  </ul>
                 </div>
-                <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center">
                   <span className="text-white text-sm font-bold">2</span>
                 </div>
               </div>
+
               <div className="flex items-center gap-6 p-4 text-section rounded-xl">
                 <div className="flex-shrink-0">
-                  <span className="text-sm font-semibold text-white bg-gradient-to-r from-orange-500 to-red-500 px-4 py-2 rounded-full">Weeks 8-10</span>
+                  <span className="text-sm font-semibold text-white bg-gradient-to-r from-orange-500 to-red-500 px-4 py-2 rounded-full">Late Nov</span>
                 </div>
                 <div className="flex-1">
-                  <span className="text-white/90 text-lg">Develop AI targeting system, integrate firing mechanism, and build web interface</span>
+                  <div className="text-white/90 text-lg font-semibold mb-2">Programming & AI Training</div>
+                  <ul className="text-white/70 text-sm space-y-1">
+                    <li>• Program ESP32 for servo control and camera interface</li>
+                    <li>• Train object recognition model on <a href="https://edgeimpulse.com/" target="_blank" rel="noopener noreferrer" className="text-purple-300 hover:text-purple-200 underline transition-colors">Edge Impulse</a></li>
+                    <li>• Implement real-time target detection algorithm</li>
+                    <li>• Develop tracking and aiming calculations</li>
+                    <li>• Create safety protocols and emergency stop system</li>
+                    <li>• Build basic control interface for testing</li>
+                  </ul>
                 </div>
-                <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-red-600 rounded-full flex items-center justify-center">
                   <span className="text-white text-sm font-bold">3</span>
                 </div>
               </div>
+
               <div className="flex items-center gap-6 p-4 text-section rounded-xl">
                 <div className="flex-shrink-0">
-                  <span className="text-sm font-semibold text-white bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 rounded-full">Weeks 11-12</span>
+                  <span className="text-sm font-semibold text-white bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 rounded-full">December</span>
                 </div>
                 <div className="flex-1">
-                  <span className="text-white/90 text-lg">Safety testing, accuracy calibration, final assembly, and demonstration</span>
+                  <div className="text-white/90 text-lg font-semibold mb-2">Integration & Final Testing</div>
+                  <ul className="text-white/70 text-sm space-y-1">
+                    <li>• Integrate AI system with mechanical platform</li>
+                    <li>• Calibrate targeting accuracy and aim compensation</li>
+                    <li>• Test full auto-targeting cycle repeatedly</li>
+                    <li>• Refine detection confidence thresholds</li>
+                    <li>• Conduct safety testing and failure mode analysis</li>
+                    <li>• Final system optimization and demonstration prep</li>
+                  </ul>
                 </div>
-                <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-pink-600 rounded-full flex items-center justify-center">
                   <span className="text-white text-sm font-bold">4</span>
                 </div>
               </div>
+            </div>
+
+            <div className="mt-6 p-4 bg-purple-500/10 border border-purple-500/30 rounded-lg">
+              <p className="text-white/80 text-sm leading-relaxed">
+                <strong className="text-purple-300">Manufacturing Note:</strong> Primary fabrication method will be 3D printing 
+                due to design flexibility and rapid iteration capability. CNC milling may be used for select flat components 
+                requiring extra rigidity or precision.
+              </p>
             </div>
           </div>
 
@@ -347,7 +641,7 @@ export default function Week1() {
                 </div>
                 <div className="flex items-center">
                   <span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
-                  <span className="text-white/90">Automatically aim and fire BB pellets at detected targets</span>
+                  <span className="text-white/90">Automatically aim and fire Nerf darts at detected targets</span>
                 </div>
                 <div className="flex items-center">
                   <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
