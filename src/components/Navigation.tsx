@@ -37,7 +37,7 @@ const Navigation = () => {
     { href: '/week3', label: 'Week 3', completed: true },
     { href: '/week4', label: 'Week 4', completed: true },
     { href: '/week5', label: 'Week 5', completed: true },
-    { href: '/week6', label: 'Week 6', completed: false },
+    { href: '/week6', label: 'Week 6', completed: true },
     { href: '/week7', label: 'Week 7', completed: false },
     { href: '/week8', label: 'Week 8', completed: false },
     { href: '/week9', label: 'Week 9', completed: false },
