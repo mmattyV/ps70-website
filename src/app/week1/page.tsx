@@ -104,14 +104,15 @@ export default function Week1() {
               <h3 className="text-4xl font-bold text-white mb-4">AI-Controlled Turret System</h3>
               <p className="text-xl text-white/80 leading-relaxed max-w-3xl mx-auto mb-8">
                 An intelligent automated turret that uses computer vision and AI to detect, track, and engage moving targets 
-                with a Nerf gun. Combining machine learning, servo control systems, and real-time image processing for precision targeting.
+                with a laser pointer. Combining machine learning, servo control systems, and real-time image processing for precision targeting. 
+                Updated to use laser targeting for improved safety and continuous operation without reloading.
               </p>
               
               {/* 3D Model Viewer */}
               <div className="max-w-4xl mx-auto mb-8">
                 <div className="relative w-full rounded-xl overflow-hidden shadow-2xl bg-gray-900/50">
                   <iframe 
-                    src="https://college964.autodesk360.com/shares/public/SH28cd1QT2badd0ea72ba70184182d9b2286?mode=embed" 
+                    src="https://college964.autodesk360.com/shares/public/SH28cd1QT2badd0ea72b26980fa3661d0e3b?mode=embed" 
                     width="100%" 
                     height="480" 
                     allowFullScreen 
@@ -120,16 +121,49 @@ export default function Week1() {
                   ></iframe>
                 </div>
                 <p className="text-center text-white/60 mt-4">
-                  Interactive 3D model of the turret pan-tilt base (Week 5 progress)
+                  Interactive 3D model of the complete pan-tilt turret platform (Week 7 MVP)
                 </p>
               </div>
               
-              <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4 max-w-2xl mx-auto">
-                <p className="text-white/80 text-sm leading-relaxed">
-                  <strong className="text-blue-300">Current Status:</strong> The model shows the completed pan-tilt base with integrated 
-                  lazy susan mechanism. The finalized system will include the vertical tilt unit and trigger pull mechanism for 
-                  full 2-axis targeting control.
-                </p>
+              <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6 max-w-3xl mx-auto">
+                <div className="flex items-start">
+                  <svg className="w-6 h-6 text-green-400 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <p className="text-white/90 text-sm leading-relaxed mb-3">
+                      <strong className="text-green-300">Week 7 MVP Complete:</strong> The mechanical platform has been fully designed, 
+                      3D printed, and assembled with working servo control. The pan-tilt mechanism provides smooth 360° rotation and 
+                      vertical aiming capability.
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-3 mt-4">
+                      <div className="flex items-start">
+                        <svg className="w-4 h-4 text-green-400 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-white/80 text-sm">Hardware: Pan-tilt platform operational</span>
+                      </div>
+                      <div className="flex items-start">
+                        <svg className="w-4 h-4 text-green-400 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-white/80 text-sm">Software: ESP32-CAM human detection (Week 6)</span>
+                      </div>
+                      <div className="flex items-start">
+                        <svg className="w-4 h-4 text-green-400 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-white/80 text-sm">Control: Dual servo PWM at 50 Hz verified</span>
+                      </div>
+                      <div className="flex items-start">
+                        <svg className="w-4 h-4 text-yellow-400 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
+                        </svg>
+                        <span className="text-white/80 text-sm">Next: Integrate vision with servo control</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -162,10 +196,10 @@ export default function Week1() {
                   <li>• Real-time object detection & tracking</li>
                   <li>• AI-powered target identification</li>
                   <li>• Precision servo-controlled aiming</li>
-                  <li>• Automated Nerf dart firing system</li>
+                  <li>• Laser pointer targeting system</li>
                   <li>• Safety protocols & emergency stop</li>
                   <li>• Live video feed & control interface</li>
-                  <li>• Target hit accuracy analytics</li>
+                  <li>• Continuous operation (no reloading)</li>
                 </ul>
               </div>
               <div className="text-section rounded-xl p-6">
@@ -196,28 +230,28 @@ export default function Week1() {
                 </div>
                 <h4 className="text-lg font-semibold text-white">3D Design & Fabrication</h4>
               </div>
-              <ul className="text-white/80 space-y-2">
-                <li className="flex items-center">
-                  <span className="w-1.5 h-1.5 bg-orange-400 rounded-full mr-3"></span>
-                  Turret base & rotating platform
-                </li>
-                <li className="flex items-center">
-                  <span className="w-1.5 h-1.5 bg-red-400 rounded-full mr-3"></span>
-                  Nerf dart magazine & feed system
-                </li>
-                <li className="flex items-center">
-                  <span className="w-1.5 h-1.5 bg-orange-400 rounded-full mr-3"></span>
-                  Camera mounting gimbal
-                </li>
-                <li className="flex items-center">
-                  <span className="w-1.5 h-1.5 bg-red-400 rounded-full mr-3"></span>
-                  Barrel & firing mechanism
-                </li>
-                <li className="flex items-center">
-                  <span className="w-1.5 h-1.5 bg-orange-400 rounded-full mr-3"></span>
-                  Safety shields & enclosures
-                </li>
-              </ul>
+                <ul className="text-white/80 space-y-2">
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-orange-400 rounded-full mr-3"></span>
+                    Turret base & rotating platform
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-red-400 rounded-full mr-3"></span>
+                    Laser pointer mounting system
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-orange-400 rounded-full mr-3"></span>
+                    Camera mounting gimbal
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-red-400 rounded-full mr-3"></span>
+                    Pan-tilt servo mechanism
+                  </li>
+                  <li className="flex items-center">
+                    <span className="w-1.5 h-1.5 bg-orange-400 rounded-full mr-3"></span>
+                    Safety shields & enclosures
+                  </li>
+                </ul>
             </div>
             <div className="text-section rounded-2xl p-6 bg-gradient-to-br from-blue-500/20 to-cyan-500/20">
               <div className="flex items-center mb-4">
@@ -428,27 +462,27 @@ export default function Week1() {
                 </ul>
               </div>
 
-              {/* Weapon System */}
-              <div className="bg-white/5 rounded-xl p-6 border border-white/10">
-                <h5 className="text-lg font-semibold text-white mb-4 flex items-center">
-                  <span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>
-                  Weapon System
-                </h5>
-                <ul className="text-white/70 space-y-3 text-sm">
-                  <li className="flex justify-between items-center gap-2">
-                    <span>Small Nerf Gun (1x)</span>
-                    <span className="text-green-400 font-semibold">$15</span>
-                  </li>
-                  <li className="flex justify-between items-center gap-2">
-                    <span>Nerf Darts (50+)</span>
-                    <span className="text-green-400 font-semibold">$8</span>
-                  </li>
-                  <li className="flex justify-between items-center gap-2">
-                    <span>Trigger Mechanism Parts</span>
-                    <span className="text-green-400 font-semibold">$5</span>
-                  </li>
-                </ul>
-              </div>
+               {/* Targeting System */}
+               <div className="bg-white/5 rounded-xl p-6 border border-white/10">
+                 <h5 className="text-lg font-semibold text-white mb-4 flex items-center">
+                   <span className="w-2 h-2 bg-orange-400 rounded-full mr-3"></span>
+                   Targeting System
+                 </h5>
+                 <ul className="text-white/70 space-y-3 text-sm">
+                   <li className="flex justify-between items-center gap-2">
+                     <span>Laser Pointer Module (1x)</span>
+                     <span className="text-green-400 font-semibold">$8</span>
+                   </li>
+                   <li className="flex justify-between items-center gap-2">
+                     <span>Laser Mount Bracket (1x)</span>
+                     <span className="text-green-400 font-semibold">$3</span>
+                   </li>
+                   <li className="flex justify-between items-center gap-2">
+                     <span>Power Switch (1x)</span>
+                     <span className="text-green-400 font-semibold">$2</span>
+                   </li>
+                 </ul>
+               </div>
 
               {/* Additional Components */}
               <div className="bg-white/5 rounded-xl p-6 border border-white/10">
@@ -500,22 +534,26 @@ export default function Week1() {
             </div>
 
             <div className="mt-6 space-y-4">
-              <div className="p-6 bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-xl">
-                <div className="flex items-center justify-between">
-                  <h5 className="text-2xl font-bold text-white">Estimated Total Cost</h5>
-                  <span className="text-4xl font-bold text-green-400">$217</span>
-                </div>
-                <p className="text-white/70 text-sm mt-2">
-                  Based on estimated component costs. Actual pricing may vary by supplier and quantity.
-                </p>
-              </div>
+               <div className="p-6 bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-xl">
+                 <div className="flex items-center justify-between">
+                   <h5 className="text-2xl font-bold text-white">Estimated Total Cost</h5>
+                   <span className="text-4xl font-bold text-green-400">$199</span>
+                 </div>
+                 <p className="text-white/70 text-sm mt-2">
+                   Updated with laser pointer system. Actual pricing may vary by supplier and quantity.
+                 </p>
+               </div>
               
-              <div className="p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
-                <p className="text-white/80 text-sm leading-relaxed">
-                  <strong className="text-blue-300">Note:</strong> Quantities are estimates and may vary based on design iterations. 
-                  Additional fasteners, adhesives, and consumables may be needed during assembly and testing phases.
-                </p>
-              </div>
+               <div className="p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
+                 <p className="text-white/80 text-sm leading-relaxed mb-2">
+                   <strong className="text-blue-300">Note:</strong> Quantities are estimates and may vary based on design iterations. 
+                   Additional fasteners, adhesives, and consumables may be needed during assembly and testing phases.
+                 </p>
+                 <p className="text-white/80 text-sm leading-relaxed">
+                   <strong className="text-blue-300">Design Update:</strong> Switched from Nerf dart projectiles to laser pointer targeting 
+                   for improved safety, continuous operation without reloading, and simpler mechanical design.
+                 </p>
+               </div>
             </div>
           </div>
 
@@ -641,11 +679,11 @@ export default function Week1() {
                 </div>
                 <div className="flex items-center">
                   <span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>
-                  <span className="text-white/90">Automatically aim and fire Nerf darts at detected targets</span>
+                  <span className="text-white/90">Automatically aim and point laser at detected targets</span>
                 </div>
                 <div className="flex items-center">
                   <span className="w-2 h-2 bg-green-400 rounded-full mr-3"></span>
-                  <span className="text-white/90">Achieve target hit rate of &gt;70% within 10-foot range</span>
+                  <span className="text-white/90">Maintain laser on target with &lt;5° tracking error</span>
                 </div>
                 <div className="flex items-center">
                   <span className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>

@@ -8,7 +8,7 @@ export default function Home() {
     { week: 4, title: 'Microcontroller Programming', href: '/week4', completed: true },
     { week: 5, title: '3D Design & Printing', href: '/week5', completed: true },
     { week: 6, title: 'Electronic Input Devices', href: '/week6', completed: true },
-    { week: 7, title: 'Electronic Output Devices', href: '/week7', completed: false },
+    { week: 7, title: 'Electronic Output Devices', href: '/week7', completed: true },
     { week: 8, title: 'CNC Milling', href: '/week8', completed: false },
     { week: 9, title: 'Radio, WiFi, and Bluetooth', href: '/week9', completed: false },
     { week: 10, title: 'Machine Building and End Effectors', href: '/week10', completed: false },
