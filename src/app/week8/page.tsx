@@ -56,7 +56,7 @@ export default function Week8() {
                 <ul className="space-y-2 text-white/70">
                   <li className="flex items-start">
                     <span className="text-purple-400 mr-2">•</span>
-                    <span>ShopBot CNC mill with 1/8" bit</span>
+                    <span>ShopBot CNC mill with 1/8&quot; bit</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-purple-400 mr-2">•</span>
@@ -147,7 +147,7 @@ export default function Week8() {
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-2"></span>
-                  <span><strong className="text-green-300">Tooling:</strong> Used 1/8" end mill for detailed carving while maintaining reasonable machining time</span>
+                  <span><strong className="text-green-300">Tooling:</strong> Used 1/8&quot; end mill for detailed carving while maintaining reasonable machining time</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-green-400 rounded-full mr-3 mt-2"></span>
@@ -175,7 +175,7 @@ export default function Week8() {
           <div className="text-section rounded-2xl p-8 mb-8">
             <h3 className="text-2xl font-semibold text-white mb-6">Milled Wood Block</h3>
             <p className="text-white/80 leading-relaxed text-lg mb-6">
-              The Oregon topographic map was milled on the ShopBot CNC using a 1/8" end mill. The laminated MDF stock 
+              The Oregon topographic map was milled on the ShopBot CNC using a 1/8&quot; end mill. The laminated MDF stock 
               provided a stable, uniform material for the deep 30mm carving. After milling, the excess material was 
               trimmed using a bandsaw to create the final piece with clean edges following Oregon&apos;s state boundaries.
             </p>
@@ -243,7 +243,7 @@ export default function Week8() {
                     ShopBot Milling
                   </h5>
                   <p className="ml-5 text-white/70">
-                    Machined the piece using a 1/8" end mill on the ShopBot. The smaller bit size allowed for detailed 
+                    Machined the piece using a 1/8&quot; end mill on the ShopBot. The smaller bit size allowed for detailed 
                     feature resolution while still being robust enough for the deep cuts. Multiple passes were required 
                     to reach the full 30mm depth.
                   </p>
@@ -397,7 +397,7 @@ export default function Week8() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-400 mr-2">•</span>
-                    <span>1/8" end mill balanced detail resolution with machining efficiency</span>
+                    <span>1/8&quot; end mill balanced detail resolution with machining efficiency</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-400 mr-2">•</span>
