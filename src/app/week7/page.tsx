@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Week7() {
   const [copied, setCopied] = useState(false);
@@ -212,9 +213,11 @@ void loop() {
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                  <img 
+                  <Image 
                     src="/ps70-website/week7/whole_mvp.jpg" 
                     alt="Complete MVP assembly"
+                    width={800}
+                    height={600}
                     className="w-full h-auto"
                   />
                 </div>
@@ -222,9 +225,11 @@ void loop() {
               </div>
               <div>
                 <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                  <img 
+                  <Image 
                     src="/ps70-website/week7/pan_tilt.jpg" 
                     alt="Pan-tilt mechanism close-up"
+                    width={800}
+                    height={600}
                     className="w-full h-auto"
                   />
                 </div>
@@ -284,9 +289,11 @@ void loop() {
             </div>
 
             <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-              <img 
+              <Image 
                 src="/ps70-website/week7/gear_train.jpg" 
                 alt="Gear train mechanism"
+                width={1200}
+                height={800}
                 className="w-full h-auto"
               />
             </div>
@@ -338,9 +345,11 @@ void loop() {
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
                 <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                  <img 
+                  <Image 
                     src="/ps70-website/week7/esp32_servo_pot_schematic_minimal_v5.png" 
                     alt="Circuit schematic diagram"
+                    width={800}
+                    height={600}
                     className="w-full h-auto bg-white p-4"
                   />
                 </div>
@@ -348,9 +357,11 @@ void loop() {
               </div>
               <div>
                 <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                  <img 
+                  <Image 
                     src="/ps70-website/week7/circuit.jpg" 
                     alt="Physical circuit wiring"
+                    width={800}
+                    height={600}
                     className="w-full h-auto bg-white/5"
                   />
                 </div>
@@ -479,9 +490,11 @@ void loop() {
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div>
                 <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                  <img 
+                  <Image 
                     src="/ps70-website/week7/smallest_wave.jpg" 
                     alt="Shortest pulse width"
+                    width={600}
+                    height={400}
                     className="w-full h-auto"
                   />
                 </div>
@@ -489,9 +502,11 @@ void loop() {
               </div>
               <div>
                 <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                  <img 
+                  <Image 
                     src="/ps70-website/week7/between_waves.jpg" 
                     alt="PWM signal period"
+                    width={600}
+                    height={400}
                     className="w-full h-auto"
                   />
                 </div>
@@ -499,9 +514,11 @@ void loop() {
               </div>
               <div>
                 <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                  <img 
+                  <Image 
                     src="/ps70-website/week7/largest_wave.jpg" 
                     alt="Longest pulse width"
+                    width={600}
+                    height={400}
                     className="w-full h-auto"
                   />
                 </div>

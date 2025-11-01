@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 export default function Week8() {
   const [copiedCode, setCopiedCode] = useState(false);
@@ -183,9 +184,11 @@ export default function Week8() {
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div>
                 <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                  <img 
+                  <Image 
                     src="/ps70-website/week8/wood_front.jpg" 
                     alt="Wood block front view"
+                    width={600}
+                    height={800}
                     className="w-full h-auto"
                   />
                 </div>
@@ -193,9 +196,11 @@ export default function Week8() {
               </div>
               <div>
                 <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                  <img 
+                  <Image 
                     src="/ps70-website/week8/wood_angle.jpg" 
                     alt="Wood block angled view"
+                    width={600}
+                    height={800}
                     className="w-full h-auto"
                   />
                 </div>
@@ -203,9 +208,11 @@ export default function Week8() {
               </div>
               <div>
                 <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                  <img 
+                  <Image 
                     src="/ps70-website/week8/wood_side.jpg" 
                     alt="Wood block side view"
+                    width={600}
+                    height={800}
                     className="w-full h-auto"
                   />
                 </div>
@@ -288,9 +295,11 @@ export default function Week8() {
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div>
                 <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                  <img 
+                  <Image 
                     src="/ps70-website/week8/plastic_front.jpg" 
                     alt="Vacuum formed plastic front view"
+                    width={600}
+                    height={800}
                     className="w-full h-auto"
                   />
                 </div>
@@ -298,9 +307,11 @@ export default function Week8() {
               </div>
               <div>
                 <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                  <img 
+                  <Image 
                     src="/ps70-website/week8/plastic_angle.jpg" 
                     alt="Vacuum formed plastic angled view"
+                    width={600}
+                    height={800}
                     className="w-full h-auto"
                   />
                 </div>
@@ -308,9 +319,11 @@ export default function Week8() {
               </div>
               <div>
                 <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                  <img 
+                  <Image 
                     src="/ps70-website/week8/plastic_back.jpg" 
                     alt="Vacuum formed plastic back view"
+                    width={600}
+                    height={800}
                     className="w-full h-auto"
                   />
                 </div>

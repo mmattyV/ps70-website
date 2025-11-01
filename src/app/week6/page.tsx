@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Week6() {
   const [copiedCapacitor, setCopiedCapacitor] = useState(false);
@@ -602,9 +603,11 @@ static int ei_camera_get_data(size_t offset, size_t length, float *out_ptr)
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div>
                 <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                  <img 
+                  <Image 
                     src="/ps70-website/week6/sensor_overview.jpg" 
                     alt="Capacitive weight sensor overview"
+                    width={800}
+                    height={600}
                     className="w-full h-auto"
                   />
                 </div>
@@ -612,9 +615,11 @@ static int ei_camera_get_data(size_t offset, size_t length, float *out_ptr)
               </div>
               <div>
                 <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                  <img 
+                  <Image 
                     src="/ps70-website/week6/sensor_open.jpg" 
                     alt="Inside view of capacitive sensor"
+                    width={800}
+                    height={600}
                     className="w-full h-auto"
                   />
                 </div>
@@ -682,9 +687,11 @@ static int ei_camera_get_data(size_t offset, size_t length, float *out_ptr)
           <div className="text-section rounded-2xl p-8 mb-8">
             <h3 className="text-2xl font-semibold text-white mb-6">Circuit Schematic</h3>
             <div className="rounded-xl overflow-hidden shadow-2xl mb-4">
-              <img 
+              <Image 
                 src="/ps70-website/week6/homebrew_sensor_schematic.jpg" 
                 alt="Capacitive sensor circuit schematic"
+                width={1200}
+                height={800}
                 className="w-full h-auto bg-white"
               />
             </div>
@@ -745,9 +752,11 @@ static int ei_camera_get_data(size_t offset, size_t length, float *out_ptr)
             </p>
 
             <div className="rounded-xl overflow-hidden shadow-2xl mb-6 bg-white p-4">
-              <img 
+              <Image 
                 src="/ps70-website/week6/Capacitor%20reading%20vs.%20Weight%20(g).png" 
                 alt="Calibration graph showing capacitor reading vs weight"
+                width={1200}
+                height={800}
                 className="w-full h-auto"
               />
             </div>
@@ -829,9 +838,11 @@ static int ei_camera_get_data(size_t offset, size_t length, float *out_ptr)
             {/* ESP32-CAM Image */}
             <div className="mb-8">
               <div className="rounded-xl overflow-hidden shadow-2xl mb-3">
-                <img 
+                <Image 
                   src="/ps70-website/week6/esp32cam.jpg" 
                   alt="ESP32-CAM AI Thinker module"
+                  width={1200}
+                  height={800}
                   className="w-full h-auto"
                 />
               </div>
@@ -906,9 +917,11 @@ static int ei_camera_get_data(size_t offset, size_t length, float *out_ptr)
           <div className="text-section rounded-2xl p-8 mb-8">
             <h3 className="text-2xl font-semibold text-white mb-6">Circuit Schematic</h3>
             <div className="rounded-xl overflow-hidden shadow-2xl mb-4">
-              <img 
+              <Image 
                 src="/ps70-website/week6/esp32_cam_schematic.jpg" 
                 alt="ESP32-CAM circuit schematic"
+                width={1200}
+                height={800}
                 className="w-full h-auto bg-white"
               />
             </div>
