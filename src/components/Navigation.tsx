@@ -40,13 +40,13 @@ const Navigation = () => {
     { href: '/week6', label: 'Week 6', completed: true },
     { href: '/week7', label: 'Week 7', completed: true },
     { href: '/week8', label: 'Week 8', completed: true },
-    { href: '/week9', label: 'Week 9', completed: false },
+    { href: '/week9', label: 'Week 9', completed: true },
     { href: '/week10', label: 'Week 10', completed: false },
-    { href: '/week11', label: 'Week 11', completed: false },
-    { href: '/week12', label: 'Week 12', completed: false },
-    { href: '/week13', label: 'Week 13', completed: false },
-    { href: '/week14', label: 'Week 14', completed: false },
-    { href: '/week15', label: 'Week 15', completed: false },
+    { href: '/week11', label: 'Week 11 (Process)', completed: true },
+    { href: '/week12', label: 'Week 12', completed: true },
+    { href: '/week13', label: 'Week 13', completed: true },
+    { href: '/week14', label: 'Week 14', completed: true },
+    { href: '/week15', label: 'Final Project', completed: true },
   ];
 
   return (
