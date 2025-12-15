@@ -11,7 +11,7 @@ export default function Home() {
     { week: 7, title: 'Electronic Output Devices', href: '/week7', completed: true },
     { week: 8, title: 'CNC Milling', href: '/week8', completed: true },
     { week: 9, title: 'Radio, WiFi, and Bluetooth', href: '/week9', completed: true },
-    { week: 10, title: 'Machine Building and End Effectors', href: '/week10', completed: false },
+    { week: 10, title: 'Machine Building and End Effectors', href: '/week10', completed: true },
     { week: 11, title: 'Final Project: Process Page', href: '/week11', completed: true },
     { week: 12, title: 'Machine Demo / Wildcard', href: '/week12', completed: true },
     { week: 13, title: 'Next Steps', href: '/week13', completed: true },
